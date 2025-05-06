@@ -45,22 +45,14 @@ const Characters = () => {
           
           {/* Character Details */}
           <div className="col-span-1 lg:col-span-2 bg-white dark:bg-comic-darkBg rounded-lg shadow-lg overflow-hidden">
-            <div className="h-56 md:h-72 bg-gray-200 relative">
-              <div 
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url('https://images.unsplash.com/photo-1517022812141-23620dba5c23?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')` }}
-              ></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                <div className="p-6">
-                  <span className="inline-block bg-comic-purple text-white px-3 py-1 text-xs rounded-full mb-2">
-                    {selectedCharacter.role}
-                  </span>
-                  <h3 className="text-3xl font-bold text-white">{selectedCharacter.name}</h3>
-                </div>
-              </div>
-            </div>
-            
             <div className="p-6">
+              <div className="mb-4">
+                <span className="inline-block bg-comic-purple text-white px-3 py-1 text-xs rounded-full mb-2">
+                  {selectedCharacter.role}
+                </span>
+                <h3 className="text-3xl font-bold text-gray-800 dark:text-white">{selectedCharacter.name}</h3>
+              </div>
+              
               <div className="prose prose-lg max-w-none dark:prose-invert">
                 <p className="text-gray-700 dark:text-gray-300">{selectedCharacter.description}</p>
                 

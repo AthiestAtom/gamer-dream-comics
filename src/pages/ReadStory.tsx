@@ -55,14 +55,6 @@ const ReadStory = () => {
           </div>
           
           <div className="bg-white dark:bg-comic-darkBg rounded-lg shadow-xl overflow-hidden">
-            {/* Story Header */}
-            <div className="h-48 md:h-64 bg-comic-darkPurple flex items-end justify-center">
-              <div 
-                className="w-full h-full bg-cover bg-center opacity-50"
-                style={{ backgroundImage: `url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')` }}
-              ></div>
-            </div>
-            
             {/* Story Content */}
             <div className="p-6 md:p-10">
               <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-white">{story.title}</h1>

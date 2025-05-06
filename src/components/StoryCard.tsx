@@ -9,23 +9,8 @@ interface StoryCardProps {
 
 const StoryCard: React.FC<StoryCardProps> = ({ story, featured = false }) => {
   return (
-    <Link to={`/read/${story.id}`} className={`comic-card block ${featured ? 'md:flex' : ''} bg-white dark:bg-comic-darkBg rounded-lg overflow-hidden shadow-lg`}>
-      <div 
-        className={`${featured ? 'md:w-1/3' : 'w-full'} h-48 ${featured ? 'md:h-auto' : ''} bg-gray-200 relative overflow-hidden`}
-      >
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')` }}
-        >
-          {story.featured && !featured && (
-            <div className="absolute top-0 right-0 bg-comic-purple text-white px-3 py-1 text-xs m-2 rounded-full">
-              Featured
-            </div>
-          )}
-        </div>
-      </div>
-      
-      <div className={`p-6 ${featured ? 'md:w-2/3' : ''}`}>
+    <Link to={`/read/${story.id}`} className={`comic-card block ${featured ? 'md:flex' : ''} bg-white dark:bg-comic-darkBg rounded-lg overflow-hidden shadow-lg`}>      
+      <div className={`p-6 ${featured ? 'md:w-full' : ''}`}>
         {featured && (
           <div className="inline-block bg-comic-purple text-white px-3 py-1 text-xs rounded-full mb-3">
             Featured Story

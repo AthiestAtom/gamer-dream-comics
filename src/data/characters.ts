@@ -5,7 +5,6 @@ export interface Character {
   role: string;
   description: string;
   abilities: string[];
-  image: string;
   relatedStory: string;
 }
 
@@ -21,7 +20,6 @@ export const characters: Character[] = [
       "Game mechanic utilization in real world",
       "Remarkable persistence"
     ],
-    image: "/character-kid.jpg",
     relatedStory: "videogamer-1"
   },
   {
@@ -35,7 +33,6 @@ export const characters: Character[] = [
       "Dimensional travel",
       "Power enhancement through serums"
     ],
-    image: "/character-variant.jpg",
     relatedStory: "videogamer-1"
   },
   {
@@ -49,7 +46,6 @@ export const characters: Character[] = [
       "Flight and tracking",
       "Communication"
     ],
-    image: "/character-drone.jpg",
     relatedStory: "videogamer-1"
   },
   {
@@ -62,7 +58,6 @@ export const characters: Character[] = [
       "Advanced technology creation",
       "Pattern recognition"
     ],
-    image: "/character-archaeologist.jpg",
     relatedStory: "videogamer-1"
   }
 ];

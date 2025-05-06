@@ -19,7 +19,7 @@ const Index = () => {
         {/* Hero Section */}
         <section className="py-12 md:py-20 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-comic-darkPurple dark:text-comic-purple animate-fade-in">
-            Welcome to GamerDream Comics
+            Welcome to Life Could Be A Dream
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-8">
             Original stories where gaming abilities merge with reality
@@ -67,10 +67,10 @@ const Index = () => {
         
         {/* About Section */}
         <section className="py-12 bg-white dark:bg-comic-darkBg rounded-lg shadow-lg p-8 my-12">
-          <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 dark:text-gray-100">About GamerDream Comics</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 dark:text-gray-100">About Life Could Be A Dream</h2>
           <div className="prose prose-lg max-w-4xl mx-auto dark:prose-invert">
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              GamerDream Comics is a collection of original stories that blend gaming mechanics with real-world scenarios. Written by Jashan Bansal, these stories explore what happens when video game abilities manifest in reality.
+              Life Could Be A Dream is a collection of original stories that blend gaming mechanics with real-world scenarios. Written by Jashan Bansal, these stories explore what happens when video game abilities manifest in reality.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
               Follow our characters as they navigate worlds where the line between virtual and real becomes increasingly blurred. Each story offers a unique perspective on how gaming skills and persistence can overcome seemingly impossible challenges.

@@ -8,9 +8,11 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center mb-4 md:mb-0">
           <Link to="/" className="text-2xl font-bold font-title flex items-center">
-            <span className="text-comic-purple mr-1">G</span>amer
-            <span className="text-comic-softOrange mx-1">D</span>ream
-            <span className="text-comic-softBlue ml-1">C</span>omics
+            <span className="text-comic-purple mr-1">L</span>ife
+            <span className="text-comic-softOrange mx-1">C</span>ould
+            <span className="text-comic-softBlue mx-1">B</span>e
+            <span className="text-comic-purple ml-1">A</span> 
+            <span className="text-comic-softBlue ml-1">D</span>ream
           </Link>
         </div>
         
