@@ -59,5 +59,18 @@ export const characters: Character[] = [
       "Pattern recognition"
     ],
     relatedStory: "videogamer-1"
+  },
+  {
+    id: "infatuator",
+    name: "The Infatuator",
+    role: "Antagonist",
+    description: "Originally a girl who bullied someone with powers, she was cursed to become a ghost that absorbs powers from apprentices. Her castle appears normal from the outside but contains a realm as large as a city inside.",
+    abilities: [
+      "Infatuation induction",
+      "Reality manipulation",
+      "Power absorption",
+      "Dimensional space control"
+    ],
+    relatedStory: "videogamer-2"
   }
-];
+]
