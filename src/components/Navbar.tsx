@@ -1,8 +1,14 @@
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Book, Users } from "lucide-react";
 
 const Navbar: React.FC = () => {
+  const location = useLocation();
+  
+  const isActive = (path: string) => {
+    return location.pathname === path ? "text-comic-purple" : "hover:text-comic-purple transition-colors";
+  };
+  
   return (
     <nav className="bg-comic-darkBg text-white py-4 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
@@ -19,20 +25,20 @@ const Navbar: React.FC = () => {
         <div className="flex space-x-6">
           <Link 
             to="/" 
-            className="flex items-center hover:text-comic-purple transition-colors"
+            className={`flex items-center ${isActive('/')}`}
           >
             Home
           </Link>
           <Link 
             to="/stories" 
-            className="flex items-center hover:text-comic-purple transition-colors"
+            className={`flex items-center ${isActive('/stories')}`}
           >
             <Book className="mr-1 h-4 w-4" />
             Stories
           </Link>
           <Link 
             to="/characters" 
-            className="flex items-center hover:text-comic-purple transition-colors"
+            className={`flex items-center ${isActive('/characters')}`}
           >
             <Users className="mr-1 h-4 w-4" />
             Characters
