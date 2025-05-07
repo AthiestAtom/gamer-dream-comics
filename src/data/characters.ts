@@ -72,5 +72,31 @@ export const characters: Character[] = [
       "Dimensional space control"
     ],
     relatedStory: "videogamer-2"
+  },
+  {
+    id: "the-creator",
+    name: "The Creator",
+    role: "Mysterious Entity",
+    description: "The powerful being who granted powers to the first saint. He has the ability to bestow and revoke powers, and occasionally intervenes when the powers are being misused.",
+    abilities: [
+      "Power bestowal",
+      "Power removal",
+      "Timeline manipulation",
+      "Resurrection"
+    ],
+    relatedStory: "videogamer-3"
+  },
+  {
+    id: "aryansh",
+    name: "Aryansh",
+    role: "Gifted Individual",
+    description: "A famous awarded writer who possesses unique powers. His abilities allow him to program and alter the timeline's simulation, effectively changing reality through code.",
+    abilities: [
+      "Timeline programming",
+      "Reality code manipulation",
+      "Simulation control",
+      "World alteration"
+    ],
+    relatedStory: "videogamer-3"
   }
 ]
