@@ -10,6 +10,8 @@ import { Book, ChevronDown, ChevronUp } from "lucide-react";
 const getSeriesFromStoryId = (id: string) => {
   if (id.startsWith("videogamer")) {
     return "Videogamer";
+  } else if (id.startsWith("atom")) {
+    return "Atom";
   }
   return "Other";
 };
@@ -17,6 +19,7 @@ const getSeriesFromStoryId = (id: string) => {
 const Stories = () => {
   const [collapsedSections, setCollapsedSections] = useState<Record<string, boolean>>({
     Videogamer: false,
+    Atom: true,
   });
 
   // Group stories by series

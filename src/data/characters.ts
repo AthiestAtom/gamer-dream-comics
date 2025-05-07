@@ -1,4 +1,3 @@
-
 export interface Character {
   id: string;
   name: string;
@@ -111,5 +110,44 @@ export const characters: Character[] = [
       "Survival instinct"
     ],
     relatedStory: "videogamer-3"
+  },
+  {
+    id: "atom",
+    name: "Atom",
+    role: "Protagonist",
+    description: "A college student who was once a mathematics and science topper. Introverted and sometimes perceived as arrogant, he sacrificed himself in the White Room to help his former classmate escape, only to be granted supernatural powers after death.",
+    abilities: [
+      "Creating white room battle dimensions",
+      "Teleportation of targets into the white room",
+      "Self-sacrifice capability",
+      "Tactical thinking under pressure"
+    ],
+    relatedStory: "atom-1"
+  },
+  {
+    id: "pandey",
+    name: "Pandey",
+    role: "Supporting Character",
+    description: "Atom's former classmate and competitive rival. After being trapped in the White Room with Atom, she reluctantly survived by accepting his sacrifice, using his remains to escape the dimension.",
+    abilities: [
+      "Survival instinct",
+      "Adaptability",
+      "Mental resilience",
+      "Problem-solving under extreme conditions"
+    ],
+    relatedStory: "atom-1"
+  },
+  {
+    id: "white-room-master",
+    name: "White Room Master",
+    role: "Antagonist",
+    description: "The mysterious being who granted Atom his powers after witnessing his sacrifice. He had previously gained the ability to create the White Room dimension and force people to battle within it.",
+    abilities: [
+      "White Room creation",
+      "Dimensional manipulation",
+      "Power bestowal",
+      "Target selection"
+    ],
+    relatedStory: "atom-1"
   }
-]
+];
