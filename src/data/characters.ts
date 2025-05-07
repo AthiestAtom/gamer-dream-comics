@@ -1,3 +1,4 @@
+
 export interface Character {
   id: string;
   name: string;
@@ -119,6 +120,8 @@ export const characters: Character[] = [
     abilities: [
       "Creating white room battle dimensions",
       "Teleportation of targets into the white room",
+      "Memory projection",
+      "Self-resurrection",
       "Self-sacrifice capability",
       "Tactical thinking under pressure"
     ],
@@ -128,7 +131,7 @@ export const characters: Character[] = [
     id: "pandey",
     name: "Pandey",
     role: "Supporting Character",
-    description: "Atom's former classmate and competitive rival. After being trapped in the White Room with Atom, she reluctantly survived by accepting his sacrifice, using his remains to escape the dimension.",
+    description: "Atom's former classmate and competitive rival. After being trapped in the White Room with Atom, she reluctantly survived by accepting his sacrifice, using his remains to escape the dimension. Later placed in mental health care after the traumatic experience.",
     abilities: [
       "Survival instinct",
       "Adaptability",
