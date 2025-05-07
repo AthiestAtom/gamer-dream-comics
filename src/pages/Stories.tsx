@@ -1,11 +1,41 @@
 
+import { useState } from "react";
 import { stories } from "../data/stories";
 import StoryCard from "../components/StoryCard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Book } from "lucide-react";
+import { Book, ChevronDown, ChevronUp } from "lucide-react";
+
+// Helper function to group stories by series
+const getSeriesFromStoryId = (id: string) => {
+  if (id.startsWith("videogamer")) {
+    return "Videogamer";
+  }
+  return "Other";
+};
 
 const Stories = () => {
+  const [collapsedSections, setCollapsedSections] = useState<Record<string, boolean>>({
+    Videogamer: false,
+  });
+
+  // Group stories by series
+  const storiesByCategory = stories.reduce((acc, story) => {
+    const series = getSeriesFromStoryId(story.id);
+    if (!acc[series]) {
+      acc[series] = [];
+    }
+    acc[series].push(story);
+    return acc;
+  }, {} as Record<string, typeof stories>);
+  
+  const toggleSection = (section: string) => {
+    setCollapsedSections(prev => ({
+      ...prev,
+      [section]: !prev[section]
+    }));
+  };
+  
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
       <Navbar />
@@ -27,11 +57,30 @@ const Stories = () => {
         
         {/* Stories List */}
         <section className="py-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {stories.map(story => (
-              <StoryCard key={story.id} story={story} />
-            ))}
-          </div>
+          {Object.entries(storiesByCategory).map(([category, categoryStories]) => (
+            <div key={category} className="mb-12">
+              <div 
+                className="flex items-center justify-between cursor-pointer bg-white dark:bg-gray-800 rounded-lg p-4 mb-6 shadow-md hover:shadow-lg transition-shadow"
+                onClick={() => toggleSection(category)}
+              >
+                <h2 className="text-2xl font-bold text-comic-darkPurple dark:text-comic-purple">
+                  {category} Series
+                </h2>
+                {collapsedSections[category] ? 
+                  <ChevronDown className="h-6 w-6 text-comic-purple" /> : 
+                  <ChevronUp className="h-6 w-6 text-comic-purple" />
+                }
+              </div>
+              
+              {!collapsedSections[category] && (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 animate-fade-in">
+                  {categoryStories.map(story => (
+                    <StoryCard key={story.id} story={story} />
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
         </section>
       </main>
       

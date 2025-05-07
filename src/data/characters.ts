@@ -98,5 +98,18 @@ export const characters: Character[] = [
       "World alteration"
     ],
     relatedStory: "videogamer-3"
+  },
+  {
+    id: "bully-girl",
+    name: "Bully Senior Girl",
+    role: "Supporting Character",
+    description: "The daughter of a minister who made a vlog of the Kid's fight against zombies. Her unofficial documentation of the events angered the Creator, leading him to temporarily revoke the Kid's powers. Despite initially being a bully, her life was saved by the Kid's selfless sacrifice.",
+    abilities: [
+      "Vlogging and documentation",
+      "Political connections",
+      "Resourcefulness",
+      "Survival instinct"
+    ],
+    relatedStory: "videogamer-3"
   }
 ]
