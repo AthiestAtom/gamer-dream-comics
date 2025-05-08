@@ -121,7 +121,6 @@ export const characters: Character[] = [
       "Creating white room battle dimensions",
       "Teleportation of targets into the white room",
       "Memory projection",
-      "Self-resurrection",
       "Self-sacrifice capability",
       "Tactical thinking under pressure"
     ],
@@ -152,5 +151,18 @@ export const characters: Character[] = [
       "Target selection"
     ],
     relatedStory: "atom-1"
+  },
+  {
+    id: "supporting-prisoner",
+    name: "Supporting Prisoner",
+    role: "Supporting Character",
+    description: "A prisoner who witnessed Atom's powers firsthand when Atom shared his memories. Initially resistant, he was compelled to help Atom train his abilities after being threatened. He later vouched for Atom's powers to authorities, helping to get his case reopened.",
+    abilities: [
+      "Adaptability under pressure",
+      "Witnessing supernatural phenomena",
+      "Persuasion skills",
+      "Survival instinct"
+    ],
+    relatedStory: "atom-2"
   }
 ];
