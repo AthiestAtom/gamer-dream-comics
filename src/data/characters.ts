@@ -1,4 +1,3 @@
-
 export interface Character {
   id: string;
   name: string;
@@ -151,6 +150,48 @@ export const characters: Character[] = [
       "Target selection"
     ],
     relatedStory: "atom-1"
+  },
+  {
+    id: "yuvi",
+    name: "Yuvi (The Dictator)",
+    role: "Protagonist/Antagonist",
+    description: "A man born with the supernatural ability to command absolute obedience. After witnessing the chaos of a democratic society, he seized control of India at age 19 and transformed it into a dictatorship focused on basic needs rather than freedoms. His harsh but effective rule eliminated poverty, corruption, and religious conflict at the cost of personal liberty.",
+    abilities: [
+      "Absolute verbal command",
+      "Strategic governance",
+      "Unwavering determination",
+      "Tactical brilliance",
+      "Moral restructuring of society"
+    ],
+    relatedStory: "dictator-1"
+  },
+  {
+    id: "zark-muckerberg",
+    name: "Zark Muckerberg",
+    role: "Antagonist",
+    description: "The elusive technology mogul behind the world's most addictive social media platforms. He represents the destructive aspects of unchecked technology and capitalism that Yuvi sought to eliminate. Protected by advanced security systems and AI technology, he remained the only significant threat to Yuvi's regime until their final confrontation.",
+    abilities: [
+      "Technological genius",
+      "Vast digital empire control",
+      "AI-driven security systems",
+      "Global influence through social media",
+      "Strategic manipulation"
+    ],
+    relatedStory: "dictator-1"
+  },
+  {
+    id: "yuvis-son",
+    name: "Yuvi's Son",
+    role: "Supporting Character",
+    description: "Created through IVF technology to be Yuvi's perfect successor, he was raised by monks in China away from modern influences. Despite his sheltered upbringing, he developed exceptional discipline, wisdom beyond his years, and mastery of various martial arts. His tragic execution at the hands of Zark Muckerberg became the catalyst for Yuvi's final vengeance.",
+    abilities: [
+      "Mastery of all martial arts",
+      "Exceptional discipline",
+      "Advanced wisdom beyond his years",
+      "Physical and mental balance",
+      "Strategic thinking under pressure"
+    ],
+    relatedStory: "dictator-1"
   },
   {
     id: "supporting-prisoner",

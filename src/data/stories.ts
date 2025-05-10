@@ -1,4 +1,3 @@
-
 export interface Story {
   id: string;
   title: string;
@@ -92,6 +91,58 @@ Atom was frustrated by the disaster him and his family were facing. He consisten
 But he wanted to reopen the case and prove that he wasn't guilty. The other prisoner made everyone believe that he had such powers and his case must be reopened. He already had lost much blood from his ears and was in hurry to run to court. But doctors weren't letting him escape. So, he used more of his effort to teleport them in a white room and went to court. After watching him getting bled from ears and nose heavily, everyone resisted his escape but weren't successful. He managed to visit the judge and used all his remaining will to show judge 's consciousness the memory of what happened earlier. It was his peak moment when completing the memory, his head exploded, and blood stained all over on judge, nearby things and floor. 
 The judge after this hearing stated that Atom wasn't guilty and commanded to free Pandey from mental health care and that parents of Atom can now appeal case in court of being defamed. The dead body of Atom was sent to a mortuary. After 1 year and 4 months of lying dead on stretcher, Atom opens his eyes and finds himself locked in mortuary room. It meant that he had been healed by someone for some specific mission.`,
     published: "May 14, 2025",
+    featured: false
+  },
+  {
+    id: "dictator-1",
+    title: "The Dictator",
+    author: "Jashan Bansal",
+    summary: "People think that war and peace are two different faces of a coin, and they are willing to accept extinction because of their poor decision making. But only one rightful leader can save them who serves others before his own.",
+    content: `India, a land of ancient traditions and democratic evolution, quietly gave rise to a man whose very voice could bend wills. Yuvi, a reserved yet observant boy, discovered during his early childhood that he possessed a superhuman ability—any command he spoke would be followed without question. Whether it was a whisper or a shout, when Yuvi dictated, people listened… and obeyed.
+
+But this wasn't a power he flaunted. At his parents' request, he made a solemn promise: until he turned 18, he would not use this gift. And so, Yuvi grew up in silence, watching the world unravel in chaos—corruption, social media addiction, poverty, religious violence, and unchecked capitalism. As others saw a flawed but functional democracy, Yuvi saw a system failing its people, choking on its own freedom.
+
+On the day he turned 19, Yuvi broke his silence. Without warning, he entered politics at noon, and by nightfall, he was declared President of India, toppling the government without a drop of blood—just a few spoken words. The media was paralyzed. Protesters froze mid-chant. Parliament members resigned in masse. The world was stunned. Yuvi had arrived.
+
+He wasted no time. Democratic rights were dismantled overnight. The Constitution was rewritten, and martial law was imposed without resistance. Yuvi's first announcement was the formation of three supreme departments:
+•	The Food Security Directorate,
+•	The National Shelter Mission,
+•	The Income Assurance Bureau.
+Every citizen's life would revolve around these three sectors. Meanwhile, all non-essential industries were either banned or restructured. Brands promoting entertainment, fashion, junk food, and tourism were obliterated. Streaming platforms, sports channels, and even public gaming were prohibited for anyone above the age of five.
+
+He criminalized betting, stock marketing, investment platforms, and banned ads that promoted materialism. Billions worth of inventory—snacks, liquor, energy drinks, and intoxicants—were incinerated. Shockingly, even Indian tea, a cultural staple, was outlawed due to its addictive properties.
+
+Yuvi didn't just dictate laws—he dictated morality. In a controversial nationwide address, he declared that any visible cleavage must be covered by saris, and skirts were replaced by full leggings or pants for all women. Vulgarity, he claimed, was the silent poison of the modern world. His rules were harsh, yet framed as protective. Those who resisted—whether journalists, actors, or religious leaders—were either imprisoned or publicly humiliated by his loyal enforcers. News channels were forced to broadcast these events in full detail, but Yuvi wasn't hiding it. He wanted the world to see the cleansing.
+
+Section 295A, once used to protect religious sentiments, was overturned. In its place came new laws under Section 82, making religion a personal liability. All places of worship were shut down or destroyed. Citizens were given an ultimatum: "Abandon your religion—or abandon your life." Religion was erased from IDs, passports, and school forms. India became a forcibly secular nation.
+
+Meanwhile, he ordered the reconstruction of the national syllabus. Traditional education was thrown out. Students were now trained based on practical capability and passion, not exams. He introduced a new employment model—one job for every citizen, no unemployment, no resumes. From janitors to judges, everyone was placed based on a national skills test, designed by Yuvi himself.
+
+But Yuvi was thinking long-term. He wanted a successor free of flaws. Using IVF technology, he had a son—raised not in luxury but under the watchful eyes of ancient monks in China, secluded from society. The boy was to grow into a symbol of balance: power with humility, control with compassion.
+
+Years passed. Under Yuvi, India became the most economically stable, technologically advanced, and globally feared country. Crime was nearly wiped out, the GDP soared, and poverty dropped to historic lows. His legal reforms centralized the justice system under his own review. No lawyer, no judge, no jury—Yuvi was the court.
+
+Yet, one enemy remained—Zark Muckerberg, the elusive founder of the most toxic social media platforms on the planet. Yuvi blamed Zark for destroying the attention span, discipline, and moral fabric of society. But reaching Zark was impossible. Despite Yuvi's dictatorship status, Zark lived behind walls of encrypted technology, AI-driven security, and satellite-controlled defense systems. Every assassin, sniper, and spy Yuvi hired failed.
+
+Then came the turning point.
+
+Zark, seeking leverage, kidnapped Yuvi's son from the monastery in China, unaware of the storm he was about to unleash. The kidnapping was both a challenge and a threat: Zark wanted to take Yuvi's throne and globalize the new empire with technology at its core.
+
+Negotiations were brief—and bitter. Yuvi demanded his son's release and the shutdown of Zark's platforms. But Zark, arrogant and emboldened by his technological empire, refused. In a moment of cold calculation, Zark issued a final blow:
+"If your world can't be ruled by reason, then it deserves a sacrifice."
+The boy was executed.
+
+Yuvi was shattered. But devastation gave way to wrath. His fury transcended grief. The time for diplomacy was over.
+
+In a final showdown, Yuvi confronted Zark, revealing powers far beyond anyone's imagination. Zark's reliance on artificial intelligence became his downfall. He underestimated the man who ruled not with tools, but with voice and presence.
+
+Yuvi spoke one final command:
+"Walk the Earth until your death—without stopping, eating, or drinking."
+
+Zark, unable to resist, began walking endlessly, bound to a fate worse than death. The world watched in horror and awe.
+
+From that day onward, Yuvi was not seen merely as a tyrant or savior—he was feared, revered, and remembered as something beyond a man. He became "The Dictator", the one who silenced democracy, eradicated religion, broke society's chains—and rebuilt the world in his own image.`,
+    published: "May 15, 2025",
     featured: false
   }
 ];
