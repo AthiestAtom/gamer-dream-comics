@@ -4,9 +4,29 @@ import { Link } from "react-router-dom";
 import { characters } from "../data/characters";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Badge } from "@/components/ui/badge";
 
 const Characters = () => {
   const [selectedCharacter, setSelectedCharacter] = useState(characters[0]);
+  
+  const getRoleBadgeVariant = (role: string) => {
+    switch (role) {
+      case "Protagonist":
+        return "bg-emerald-500 dark:bg-emerald-600";
+      case "Antagonist":
+        return "bg-red-500 dark:bg-red-600";
+      case "Supporting Character":
+        return "bg-blue-500 dark:bg-blue-600";
+      case "Mysterious Entity":
+        return "bg-purple-500 dark:bg-purple-600";
+      case "Gifted Individual":
+        return "bg-amber-500 dark:bg-amber-600";
+      case "Protagonist/Antagonist":
+        return "bg-gradient-to-r from-emerald-500 to-red-500 dark:from-emerald-600 dark:to-red-600";
+      default:
+        return "bg-comic-purple dark:bg-comic-darkPurple";
+    }
+  };
   
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
@@ -47,9 +67,11 @@ const Characters = () => {
           <div className="col-span-1 lg:col-span-2 bg-white dark:bg-comic-darkBg rounded-lg shadow-lg overflow-hidden">
             <div className="p-6">
               <div className="mb-4">
-                <span className="inline-block bg-comic-purple text-white px-3 py-1 text-xs rounded-full mb-2">
+                <Badge 
+                  className={`mb-2 ${getRoleBadgeVariant(selectedCharacter.role)}`}
+                >
                   {selectedCharacter.role}
-                </span>
+                </Badge>
                 <h3 className="text-3xl font-bold text-gray-800 dark:text-white">{selectedCharacter.name}</h3>
               </div>
               
