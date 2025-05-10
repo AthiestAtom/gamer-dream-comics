@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { characters } from "../data/characters";
@@ -21,8 +20,6 @@ const Characters = () => {
         return "bg-purple-500 dark:bg-purple-600";
       case "Gifted Individual":
         return "bg-amber-500 dark:bg-amber-600";
-      case "Protagonist/Antagonist":
-        return "bg-gradient-to-r from-emerald-500 to-red-500 dark:from-emerald-600 dark:to-red-600";
       default:
         return "bg-comic-purple dark:bg-comic-darkPurple";
     }

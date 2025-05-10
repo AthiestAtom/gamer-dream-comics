@@ -168,7 +168,7 @@ export const characters: Character[] = [
   {
     id: "yuvi",
     name: "Yuvi (The Dictator)",
-    role: "Protagonist/Antagonist",
+    role: "Protagonist",
     description: "A man born with the supernatural ability to command absolute obedience. After witnessing the chaos of a democratic society, he seized control of India at age 19 and transformed it into a dictatorship focused on basic needs rather than freedoms. His harsh but effective rule eliminated poverty, corruption, and religious conflict at the cost of personal liberty.",
     abilities: [
       "Absolute verbal command",
