@@ -12,6 +12,8 @@ const getSeriesFromStoryId = (id: string) => {
     return "Videogamer";
   } else if (id.startsWith("atom")) {
     return "Atom";
+  } else if (id.startsWith("dictator")) {
+    return "Dictator";
   }
   return "Other";
 };
@@ -20,6 +22,7 @@ const Stories = () => {
   const [collapsedSections, setCollapsedSections] = useState<Record<string, boolean>>({
     Videogamer: false,
     Atom: true,
+    Dictator: true,
   });
 
   // Group stories by series

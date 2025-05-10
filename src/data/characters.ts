@@ -1,3 +1,4 @@
+
 export interface Character {
   id: string;
   name: string;
@@ -139,6 +140,19 @@ export const characters: Character[] = [
     relatedStory: "atom-1"
   },
   {
+    id: "supporting-prisoner",
+    name: "Supporting Prisoner",
+    role: "Supporting Character",
+    description: "A prisoner who witnessed Atom's powers firsthand when Atom shared his memories. Initially resistant, he was compelled to help Atom train his abilities after being threatened. He later vouched for Atom's powers to authorities, helping to get his case reopened.",
+    abilities: [
+      "Adaptability under pressure",
+      "Witnessing supernatural phenomena",
+      "Persuasion skills",
+      "Survival instinct"
+    ],
+    relatedStory: "atom-2"
+  },
+  {
     id: "white-room-master",
     name: "White Room Master",
     role: "Antagonist",
@@ -192,18 +206,5 @@ export const characters: Character[] = [
       "Strategic thinking under pressure"
     ],
     relatedStory: "dictator-1"
-  },
-  {
-    id: "supporting-prisoner",
-    name: "Supporting Prisoner",
-    role: "Supporting Character",
-    description: "A prisoner who witnessed Atom's powers firsthand when Atom shared his memories. Initially resistant, he was compelled to help Atom train his abilities after being threatened. He later vouched for Atom's powers to authorities, helping to get his case reopened.",
-    abilities: [
-      "Adaptability under pressure",
-      "Witnessing supernatural phenomena",
-      "Persuasion skills",
-      "Survival instinct"
-    ],
-    relatedStory: "atom-2"
   }
 ];

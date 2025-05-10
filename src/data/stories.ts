@@ -1,3 +1,4 @@
+
 export interface Story {
   id: string;
   title: string;
@@ -95,7 +96,7 @@ The judge after this hearing stated that Atom wasn't guilty and commanded to fre
   },
   {
     id: "dictator-1",
-    title: "The Dictator",
+    title: "Dictator 1",
     author: "Jashan Bansal",
     summary: "People think that war and peace are two different faces of a coin, and they are willing to accept extinction because of their poor decision making. But only one rightful leader can save them who serves others before his own.",
     content: `India, a land of ancient traditions and democratic evolution, quietly gave rise to a man whose very voice could bend wills. Yuvi, a reserved yet observant boy, discovered during his early childhood that he possessed a superhuman ability—any command he spoke would be followed without question. Whether it was a whisper or a shout, when Yuvi dictated, people listened… and obeyed.
