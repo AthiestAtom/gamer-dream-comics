@@ -1,4 +1,3 @@
-
 export interface Character {
   id: string;
   name: string;
@@ -206,5 +205,34 @@ export const characters: Character[] = [
       "Strategic thinking under pressure"
     ],
     relatedStory: "dictator-1"
+  },
+  {
+    id: "noe-chu",
+    name: "Noe-Chu (Mr. Effort)",
+    role: "Protagonist",
+    description: "A legendarily unlucky boy who gained superpowers after consuming cosmic candies. His powers are triggered by misfortune and bad luck, making him an accidental hero who saves the day through a series of unfortunate events and clumsy mishaps.",
+    abilities: [
+      "Luck manipulation",
+      "Accidental heroism",
+      "Chaos creation",
+      "Flight (only when launched by mistake)",
+      "Teleportation (triggered by stubbed toes)",
+      "Fire control (when sneezing near chili powder)"
+    ],
+    relatedStory: "mreffort-1"
+  },
+  {
+    id: "professor-yoshimitsu",
+    name: "Professor Yoshimitsu",
+    role: "Antagonist",
+    description: "A bitter science teacher with a hairstyle resembling a bored pineapple. After failing to win a Nobel Prize for his 'edible magnets,' he created a laser powered by used batteries and concentrated jealousy to cancel probability-based powers, turning Mr. Effort temporarily into Mr. Sloth.",
+    abilities: [
+      "Scientific genius",
+      "Probability manipulation",
+      "Power neutralization",
+      "Invention creation",
+      "Jealousy conversion"
+    ],
+    relatedStory: "mreffort-1"
   }
 ];

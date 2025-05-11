@@ -14,6 +14,8 @@ const getSeriesFromStoryId = (id: string) => {
     return "Atom";
   } else if (id.startsWith("dictator")) {
     return "Dictator";
+  } else if (id.startsWith("mreffort")) {
+    return "Mr. Effort";
   }
   return "Other";
 };
@@ -23,6 +25,7 @@ const Stories = () => {
     Videogamer: false,
     Atom: true,
     Dictator: true,
+    "Mr. Effort": true,
   });
 
   // Group stories by series
