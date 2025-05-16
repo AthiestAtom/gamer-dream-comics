@@ -1,3 +1,4 @@
+
 export interface Character {
   id: string;
   name: string;
@@ -288,17 +289,6 @@ export const characters: Character[] = [
       "Cellular compatibility with his clone"
     ],
     relatedStory: "scientist-1"
-  },
-  {
-    id: "the-clone",
-    name: "The Clone",
-    role: "Supporting Character",
-    description: "The world's first successful human duplicate, created by the Student. Though his existence was brief, the malfunctioning of his creation device after being thrown into the river caused a worldwide blood contamination crisis.",
-    abilities: [
-      "Identical DNA to the Student",
-      "Biological uniqueness",
-      "Unintentional blood generation"
-    ],
-    relatedStory: "scientist-1"
   }
 ];
+
