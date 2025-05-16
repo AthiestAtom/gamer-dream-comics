@@ -161,5 +161,52 @@ Nearly a century later, in 2023, a group of geology students on a field trip acc
 Now awake in the modern world, Noe-Chu found himself famous again, but confused by modern slang, terrified of touchscreen phones, and deeply allergic to oat milk. Every attempt to use his powers ended in physical comedy: he tried stopping a robbery by slipping on a spilled juice box, which flung him into a shelf of pineapples, which then distracted the robbers long enough for mall security to arrive. Airdropping a villain from the sky? He tripped on a dog leash and fell onto the villain's car just as they tried to escape. The world labelled him a "Glitch Hero," and the geology students started a podcast called "Unearth This," featuring his weekly misadventures. Noe-Chu, still unlucky, now wore a new version of his chest plate—not shiny gold, but dented steel with one word blinking beneath dust and fingerprints: "Retrying…" And somehow, that felt right.`,
     published: "May 17, 2025",
     featured: false
+  },
+  {
+    id: "mreffort-2",
+    title: "No More Writer",
+    author: "Jashan Bansal",
+    summary: "Before the Truman Show or TVA, Mr. Effort had already experienced the life of being trapped in reality manipulation. But risking unruled dimensions for breaking your own strings, does that make sense?",
+    content: `Writer Noe Chu, had always been a bit of an average guy in his world. He wasn't aware of the powers he held—until, one day when something strange happened. He had been writing a story while travelling back to his college, as he often did, about his own superhero characters—like Noe Chu aka Mr. Effort, whose superpower was being lucky. He got struck an idea to introduce that Mr. Effort could break the fourth wall and be aware of his existence within the story from now. It seemed like a fun twist, something to spice up the narrative. To do this, he inserted a scene of his own meetup with Mr. Effort in this journey. What he didn't expect, however, was for his writing to somehow drag the real-life Mr. Effort—into his world.
+
+Without any warning, Noe Chu found himself sitting right in front of the Writer, looking at him like he had just walked into the wrong place at the wrong time. Confusion swirled in Noe Chu's mind—was this some sort of joke? Was he being pranked? He couldn't understand how he had ended up in a completely different world, staring at the very person who had written the life he had been living.
+
+The Writer, equally bewildered, stared back at Noe Chu, and there was a long moment of silence. Noe Chu, who was always calm in chaotic situations, couldn't hold it in anymore. He exploded, demanding answers, furious at the realization that his entire existence had been written into someone else's narrative.
+
+It was difficult to grasp—his entire life, his struggles, the relationships that had been severed, and the pain he had endured, were all part of a story someone had crafted for him. The more he thought about it, the angrier he became. The Writer, still trying to stay composed, explained that Noe Chu's life had been shaped by the story he had written. All of Noe Chu's desires, his heroism, his battles—they had all come from the Writer's imagination. In a way, he had given Noe Chu everything he had never had in his own life. But Noe Chu wasn't buying it.
+
+How could his life be reduced to just some plot point in a book? How could someone decide his fate, making him live through endless battles, long separations from his family, and sacrificing his happiness for the sake of a grand narrative? He couldn't accept it.
+
+The Writer, somewhat unfazed, tried to explain that Noe Chu's heroism was not without purpose. Sure, people had died—some innocent, some not—but that's the cost of being a hero. Noe Chu had saved millions, and that alone made him indispensable to the story. In the Writer's world, heroes had to make tough choices, even if it meant sacrificing some lives. Noe Chu was supposed to be the one who took on the pain of those losses to ensure that the world was better. That was the nature of story writing.
+
+But Noe Chu wasn't having it. He wasn't okay with the idea that people had died just because the Writer decided it would add depth to the plot.
+
+Then, as the argument heated up, the Writer casually asked Noe Chu what would happen if he lost his powers—what if Mr. Effort no longer had the ability to save the world, to be the hero? Would Noe Chu be okay with that?
+
+For the first time, Noe Chu paused. The thought of losing his powers wasn't as terrifying as he had expected. Maybe it would be a relief. Maybe he was done with being the one who always fought, always saved the day, and always carried the burden of responsibility. Mr. Effort was tired.
+
+He didn't need the powers anymore. He didn't want to be the hero forever. And honestly, Mr. Sloth had caused much chaos in his world already. He hated the idea that his entire existence had been dictated by the whims of the Writer, and the notion of being free from that was oddly appealing.
+
+The Writer, sensing an opportunity to drive home his point, warned that if he stopped writing, the balance of the universe would collapse. Villains would rise. Time would unravel. Without the Writer, Noe Chu would never know what chaos would emerge. It would be far worse than anything Noe Chu could imagine.
+
+But Noe Chu, becoming more sardonic by the second, shrugged. Let it all collapse, he thought. After all, what good was a world where someone else controlled everyone's fate? Why should the Writer be the one to decide who lived and who died?
+
+But the Writer wasn't ready to give up so easily. He argued that without Noe Chu, there would be no moral compass, no one to hold the villains in check. The hero's role had to be filled, even if it came with pain. And if Noe Chu stepped away, the consequences could be catastrophic. In the middle of their heated exchange, passengers noticed a constant rhythm that was coming out of something nearby.
+
+A man shouted upon all to maintain silence so that he gets no difficulty to locate origin of source of that sound. It appeared to be a Tik-Tik noise from the Writer's backpack that was placed in the rack of bus. They all started screaming that it is a bomb. No one wanted Writer to utter even a word. In the panicked situation, the bus driver tried to slow down, which led to fastening of the rhythm from that backpack with people's heartbeat. Mr. Effort explained that it could be a motion catching bomb, as long as the bus runs, it won't burst. 
+
+People believed him and asked him for solution. But to him, convincing Writer mattered more. Writer started feeling humiliated and irritated because all the passengers started staring at him. In fury, he frankly denied to give up writing and claimed that the power chose him for this purpose. As he said this, he took out his pen to send Noe Chu back without his powers this time to be safe from any attempt made by Mr. Effort in future. But pointing his clutch pen a detonator, Mr. Effort snatched it from him. 
+
+In disbelief and fear, the passengers picked Writer from his seat and threw him out of the moving bus. Noe Chu couldn't help but chuckle. The mighty Writer, scrambling around like a cartoon character, slipping and sliding on his own mess. Now the bus was free of button detonation, but still under high risk of any bus break which may cause blast. Meanwhile, Writer was critical but still alive, lying on the road. With a bunch of broken ribs and bones, Writer was left with single agenda- to kill Mr. Effort. 
+
+So, using his bleeding finger, he tried to write- NO MORE MR. EFFORT on the road. But suddenly, a rash driver crashed his car upon Writer, knocking him down finally. This driver was none other than Sevlon Bhoi. In panic, he stepped out of car to confirm if it's not a deer again, and in calm voice whispered that at least this time, Bishnoi gang won't be after him again.
+
+However, tensions rose within passengers as the Tik-tik sound remained clicking. They started praying to Mr. Effort for a solution. Believing in his own powers, he started shooting imaginary invisible plasma ray on the bag-pack using his hands. The next moment, driver announced that the fuel was exhausted. As the bus slowed down, the sound started speeding up.
+
+And with the bus coming to a break, the noise faded too. Turned out that the Tik-Tik was the sound of bag's zip constantly hitting the rod of bus rack instead of any bomb. During change in speed, breaks or turns, the increase in bus vibration used to increase the number of hits by zip per second. After realising the truth about it, they felt foolish murdering the innocent Writer, and vowed that a secret won't go beyond the windows of that bus from now on.
+
+The secret was- Noe Chu aka Mr. Effort is not of their universe. They all pretended that Noe Chu is none other than his own variant aka Writer. Left with his powers of Luck, and the ability to break the fourth wall, Noe Chu decided to continue living—pretending to be the Writer, saving people, and hoping that someday, he would return to the world where he truly belonged.`,
+    published: "May 19, 2025",
+    featured: false
   }
 ];
