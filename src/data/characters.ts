@@ -1,4 +1,3 @@
-
 export interface Character {
   id: string;
   name: string;
@@ -240,7 +239,7 @@ export const characters: Character[] = [
     id: "the-writer",
     name: "The Writer",
     role: "Antagonist",
-    description: "The creator of Mr. Effort's story who unexpectedly finds his fictional character appearing in his real world. He has the power to control narrative and fate through his writing, but struggles with the moral implications of his storytelling when confronted by his own creation.",
+    description: "A variant of Noe Chu in another universe. The creator of Mr. Effort's story who unexpectedly finds his fictional character appearing in his real world. He has the power to control narrative and fate through his writing, but struggles with the moral implications of his storytelling when confronted by his own creation.",
     abilities: [
       "Reality manipulation through writing",
       "Character creation",
@@ -291,4 +290,3 @@ export const characters: Character[] = [
     relatedStory: "scientist-1"
   }
 ];
-
