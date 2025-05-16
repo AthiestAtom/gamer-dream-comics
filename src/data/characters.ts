@@ -1,4 +1,3 @@
-
 export interface Character {
   id: string;
   name: string;
@@ -261,5 +260,45 @@ export const characters: Character[] = [
       "Accidental heroism"
     ],
     relatedStory: "mreffort-2"
+  },
+  {
+    id: "the-professor",
+    name: "The Professor",
+    role: "Antagonist",
+    description: "A once-visionary scientist who abandoned his pursuit of transcending the limitations of life and death. Consumed by bitterness and jealousy when his former student succeeded where he had given up, he orchestrated a brutal assault that nearly killed the student and led to a global catastrophe.",
+    abilities: [
+      "Scientific genius",
+      "Engineering expertise",
+      "Teleportation device creation",
+      "Opportunistic entrepreneurship",
+      "Multiversal travel technology"
+    ],
+    relatedStory: "scientist-1"
+  },
+  {
+    id: "the-student",
+    name: "The Student",
+    role: "Protagonist",
+    description: "A brilliant and determined scientist who refused to abandon his vision of transcending natural limitations. After years of relentless research, he succeeded in creating human duplication technology, only to be betrayed by his former mentor and lose his memory in an attack.",
+    abilities: [
+      "Human duplication technology",
+      "Biological engineering",
+      "Vaccine development",
+      "Extreme persistence",
+      "Cellular compatibility with his clone"
+    ],
+    relatedStory: "scientist-1"
+  },
+  {
+    id: "the-clone",
+    name: "The Clone",
+    role: "Supporting Character",
+    description: "The world's first successful human duplicate, created by the Student. Though his existence was brief, the malfunctioning of his creation device after being thrown into the river caused a worldwide blood contamination crisis.",
+    abilities: [
+      "Identical DNA to the Student",
+      "Biological uniqueness",
+      "Unintentional blood generation"
+    ],
+    relatedStory: "scientist-1"
   }
 ];
