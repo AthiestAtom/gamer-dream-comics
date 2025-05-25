@@ -236,7 +236,7 @@ With grim resolve, the scientist dove into the crimson river. Deep within its de
     id: "collab-1",
     title: "MINI-COLLAB",
     author: "Jashan Bansal",
-    summary: "When Atom stood up, he saw a man who was the cause of his resurrection. The figure, dressed in sterile gloves and exuding surgical detachment, introduced himself as Reviver.",
+    summary: "Some echoes of the past are best left unheard. But can defying laws of nature in conviction lead to disaster by its own saviors?",
     content: `When Atom stood up, he saw a man who was the cause of his resurrection. The figure, dressed in sterile gloves and exuding surgical detachment, introduced himself as Reviver. There was nothing ceremonial about him—his name reflected function, not identity. He claimed the ability to revive the deads and repair the heaviest wounds of any creature no matter what. And now, under command, he had revived Atom to assist in a task that would demand just that.
 The task originated from Yuvi. The former dictator, once a voice that could bend the wills of entire parliaments, now moved with quieter conviction. His son had died—brutally and irreversibly—and there remained no trace of his body to reconstruct from. Reviver could rebuild the form from scratch, but not from void. The only source of precise behavioural geometry resided in Yuvi's memory.
 That memory needed to be extracted, and for that, Atom was necessary. His consciousness-transfer ability, already dangerously refined by past experiences, could retrieve memory at a resolution more precise than anything artificial could offer. Yet the process had proven lethal before—he had died from it once. Still, under Yuvi's dictationary command, there was little option to refuse. 
