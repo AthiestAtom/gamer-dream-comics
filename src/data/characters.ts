@@ -1,3 +1,4 @@
+
 export interface Character {
   id: string;
   name: string;
@@ -223,16 +224,17 @@ export const characters: Character[] = [
   },
   {
     id: "reviver",
-    name: "Reviver",
-    role: "Supporting Character",
-    description: "A mysterious figure with surgical detachment who claims the ability to revive the dead and repair the heaviest wounds of any creature. His name reflects function rather than identity. He carries disturbing memories from another world - fragments of blood-streaked streets, distorted figures, and corroded settings that suggest a dark past in an unnatural realm. Despite his concerning background, he assists in the revival process and provides stabilizing influence during dangerous memory extraction procedures.",
+    name: "Reviver (Paradox)",
+    role: "Protagonist",
+    description: "A mysterious figure with surgical detachment who possesses the ability to revive the dead and repair the heaviest wounds of any creature. His name reflects function rather than identity, but he's also known as 'Paradox' due to his unique temporal situation. Though he belongs to the present, he has experienced time travel and witnessed future events as his past, giving him disturbing memories of what's to come. This temporal displacement explains his detached demeanor and the concerning visions that seem foreign to others.",
     abilities: [
       "Revival of the dead",
       "Healing of severe wounds",
+      "Time travel experience",
+      "Future event knowledge",
       "Stabilizing influence during consciousness transfer",
       "Surgical precision and detachment",
-      "Cross-dimensional experience",
-      "Memory concealment"
+      "Temporal paradox navigation"
     ],
     relatedStory: "collab-1"
   },
