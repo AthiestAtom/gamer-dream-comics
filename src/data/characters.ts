@@ -207,6 +207,51 @@ export const characters: Character[] = [
     relatedStory: "dictator-1"
   },
   {
+    id: "yuvis-son-beast",
+    name: "Yuvi's Son (Beast Form)",
+    role: "Tragic Character",
+    description: "The resurrected form of Yuvi's son, brought back through a flawed revival process that was contaminated by Atom's traumatic memories. The revival, intended to restore the perfect heir, instead created a beast-like creature with a dead brain, incapable of receiving commands or maintaining human consciousness. In the White Room, he regained his original form and mental clarity, understanding the terrible fate that awaited him outside.",
+    abilities: [
+      "Beast-like physical transformation",
+      "Immunity to verbal commands",
+      "Extraordinary martial arts mastery (in human form)",
+      "Mental clarity restoration in White Room",
+      "Self-sacrifice determination",
+      "Enhanced physical strength in beast form"
+    ],
+    relatedStory: "collab-1"
+  },
+  {
+    id: "reviver",
+    name: "Reviver",
+    role: "Supporting Character",
+    description: "A mysterious figure with surgical detachment who claims the ability to revive the dead and repair the heaviest wounds of any creature. His name reflects function rather than identity. He carries disturbing memories from another world - fragments of blood-streaked streets, distorted figures, and corroded settings that suggest a dark past in an unnatural realm. Despite his concerning background, he assists in the revival process and provides stabilizing influence during dangerous memory extraction procedures.",
+    abilities: [
+      "Revival of the dead",
+      "Healing of severe wounds",
+      "Stabilizing influence during consciousness transfer",
+      "Surgical precision and detachment",
+      "Cross-dimensional experience",
+      "Memory concealment"
+    ],
+    relatedStory: "collab-1"
+  },
+  {
+    id: "reviver-clone",
+    name: "Reviver's Clone",
+    role: "Supporting Character",
+    description: "A perfect structural duplicate of Reviver created by the Scientist under Yuvi's instruction. Unlike the original, this clone is devoid of the concerning scars and disturbing memories that raised suspicions about Reviver's past. The clone possesses the same revival abilities but operates with automated precision, performing healing gestures without the complex background of the original. After the failed mission, the clone joined the Scientist's research projects.",
+    abilities: [
+      "Identical revival abilities to original Reviver",
+      "Automated healing responses",
+      "Structural perfection without flaws",
+      "Memory-free operation",
+      "Scientific collaboration",
+      "Precise reconstruction capabilities"
+    ],
+    relatedStory: "collab-1"
+  },
+  {
     id: "noe-chu",
     name: "Noe-Chu (Mr. Effort)",
     role: "Protagonist",
