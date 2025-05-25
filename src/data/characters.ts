@@ -1,4 +1,3 @@
-
 export interface Character {
   id: string;
   name: string;
@@ -210,7 +209,7 @@ export const characters: Character[] = [
   {
     id: "yuvis-son-beast",
     name: "Yuvi's Son (Beast Form)",
-    role: "Tragic Character",
+    role: "Antagonist",
     description: "The resurrected form of Yuvi's son, brought back through a flawed revival process that was contaminated by Atom's traumatic memories. The revival, intended to restore the perfect heir, instead created a beast-like creature with a dead brain, incapable of receiving commands or maintaining human consciousness. In the White Room, he regained his original form and mental clarity, understanding the terrible fate that awaited him outside.",
     abilities: [
       "Beast-like physical transformation",
