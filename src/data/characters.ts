@@ -10,7 +10,7 @@ export interface Character {
 export const characters: Character[] = [
   {
     id: "the-kid",
-    name: "The Kid",
+    name: "The Kid (The Videogamer)",
     role: "Protagonist",
     description: "A college student with extraordinary guts but little physical potential. Despite being isolated and having few friends, he possesses a peculiar gaming-related superpower that allows him to change reality through video games.",
     abilities: [
@@ -22,8 +22,8 @@ export const characters: Character[] = [
     relatedStory: "videogamer-1"
   },
   {
-    id: "the-variant",
-    name: "The Variant",
+    id: "evil-videogamer",
+    name: "The Evil Videogamer",
     role: "Antagonist",
     description: "An alternate timeline version of the Kid who has discovered and mastered his powers. He rules over a dimensional city where he keeps people as slaves.",
     abilities: [
@@ -61,7 +61,7 @@ export const characters: Character[] = [
   },
   {
     id: "infatuator",
-    name: "The Infatuator",
+    name: "Kid's Ex (The Infatuator)",
     role: "Antagonist",
     description: "Originally a girl who bullied someone with powers, she was cursed to become a ghost that absorbs powers from apprentices. Her castle appears normal from the outside but contains a realm as large as a city inside.",
     abilities: [
@@ -87,8 +87,8 @@ export const characters: Character[] = [
   },
   {
     id: "aryansh",
-    name: "Aryansh",
-    role: "Gifted Individual",
+    name: "Aryansh (The Racingcode)",
+    role: "Antagonist",
     description: "A famous awarded writer who possesses unique powers. His abilities allow him to program and alter the timeline's simulation, effectively changing reality through code.",
     abilities: [
       "Timeline programming",
@@ -101,7 +101,7 @@ export const characters: Character[] = [
   {
     id: "bully-girl",
     name: "Bully Senior Girl",
-    role: "Supporting Character",
+    role: "Antagonist",
     description: "The daughter of a minister who made a vlog of the Kid's fight against zombies. Her unofficial documentation of the events angered the Creator, leading him to temporarily revoke the Kid's powers. Despite initially being a bully, her life was saved by the Kid's selfless sacrifice.",
     abilities: [
       "Vlogging and documentation",
@@ -113,7 +113,7 @@ export const characters: Character[] = [
   },
   {
     id: "atom",
-    name: "Atom",
+    name: "Atom (The Pyscho)",
     role: "Protagonist",
     description: "A college student who was once a mathematics and science topper. Introverted and sometimes perceived as arrogant, he sacrificed himself in the White Room to help his former classmate escape, only to be granted supernatural powers after death.",
     abilities: [
@@ -139,8 +139,8 @@ export const characters: Character[] = [
     relatedStory: "atom-1"
   },
   {
-    id: "supporting-prisoner",
-    name: "Supporting Prisoner",
+    id: "pushp",
+    name: "Pushp",
     role: "Supporting Character",
     description: "A prisoner who witnessed Atom's powers firsthand when Atom shared his memories. Initially resistant, he was compelled to help Atom train his abilities after being threatened. He later vouched for Atom's powers to authorities, helping to get his case reopened.",
     abilities: [
@@ -208,7 +208,7 @@ export const characters: Character[] = [
   },
   {
     id: "yuvis-son-beast",
-    name: "Yuvi's Son (Beast Form)",
+    name: "Yuvi's Son in Beast Form",
     role: "Antagonist",
     description: "The resurrected form of Yuvi's son, brought back through a flawed revival process that was contaminated by Atom's traumatic memories. The revival, intended to restore the perfect heir, instead created a beast-like creature with a dead brain, incapable of receiving commands or maintaining human consciousness. In the White Room, he regained his original form and mental clarity, understanding the terrible fate that awaited him outside.",
     abilities: [
@@ -223,16 +223,15 @@ export const characters: Character[] = [
   },
   {
     id: "reviver",
-    name: "Reviver (Paradox)",
+    name: "Reviver (The Paradox)",
     role: "Protagonist",
     description: "A mysterious figure with surgical detachment who possesses the ability to revive the dead and repair the heaviest wounds of any creature. His name reflects function rather than identity, but he's also known as 'Paradox' due to his unique temporal situation. Though he belongs to the present, he has experienced time travel and witnessed future events as his past, giving him disturbing memories of what's to come. This temporal displacement explains his detached demeanor and the concerning visions that seem foreign to others.",
     abilities: [
       "Revival of the dead",
-      "Healing of severe wounds",
+      "Healing fellow's severe wounds",
       "Time travel experience",
-      "Future event knowledge",
-      "Stabilizing influence during consciousness transfer",
-      "Surgical precision and detachment",
+      "Future event glimpses",
+      "Surgical precision",
       "Temporal paradox navigation"
     ],
     relatedStory: "collab-1"
@@ -244,8 +243,6 @@ export const characters: Character[] = [
     description: "A perfect structural duplicate of Reviver created by the Scientist under Yuvi's instruction. Unlike the original, this clone is devoid of the concerning scars and disturbing memories that raised suspicions about Reviver's past. The clone possesses the same revival abilities but operates with automated precision, performing healing gestures without the complex background of the original. After the failed mission, the clone joined the Scientist's research projects.",
     abilities: [
       "Identical revival abilities to original Reviver",
-      "Automated healing responses",
-      "Structural perfection without flaws",
       "Memory-free operation",
       "Scientific collaboration",
       "Precise reconstruction capabilities"
@@ -254,22 +251,20 @@ export const characters: Character[] = [
   },
   {
     id: "noe-chu",
-    name: "Noe-Chu (Mr. Effort)",
+    name: "Noe-Chu (The Mr. Effort)",
     role: "Protagonist",
     description: "A legendarily unlucky boy who gained superpowers after consuming cosmic candies. His powers are triggered by misfortune and bad luck, making him an accidental hero who saves the day through a series of unfortunate events and clumsy mishaps.",
     abilities: [
-      "Luck manipulation",
+      "Effort manipulation",
       "Accidental heroism",
-      "Chaos creation",
-      "Flight (only when launched by mistake)",
-      "Teleportation (triggered by stubbed toes)",
-      "Fire control (when sneezing near chili powder)"
+      "Positive Chaos creation",
+      "Fourth Wall breaking"
     ],
     relatedStory: "mreffort-1"
   },
   {
     id: "professor-yoshimitsu",
-    name: "Professor Yoshimitsu",
+    name: "Yoshimitsu (The teacher)",
     role: "Antagonist",
     description: "A bitter science teacher with a hairstyle resembling a bored pineapple. After failing to win a Nobel Prize for his 'edible magnets,' he created a laser powered by used batteries and concentrated jealousy to cancel probability-based powers, turning Mr. Effort temporarily into Mr. Sloth.",
     abilities: [
@@ -283,7 +278,7 @@ export const characters: Character[] = [
   },
   {
     id: "the-writer",
-    name: "The Writer",
+    name: "Noe Chu's Varient (The Writer)",
     role: "Antagonist",
     description: "A variant of Noe Chu in another universe. The creator of Mr. Effort's story who unexpectedly finds his fictional character appearing in his real world. He has the power to control narrative and fate through his writing, but struggles with the moral implications of his storytelling when confronted by his own creation.",
     abilities: [
@@ -323,7 +318,7 @@ export const characters: Character[] = [
   },
   {
     id: "the-student",
-    name: "The Student",
+    name: "The Scientist",
     role: "Protagonist",
     description: "A brilliant and determined scientist who refused to abandon his vision of transcending natural limitations. After years of relentless research, he succeeded in creating human duplication technology, only to be betrayed by his former mentor and lose his memory in an attack.",
     abilities: [
