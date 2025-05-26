@@ -1,6 +1,7 @@
 
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import { Story } from "../data/stories";
+import { ChevronDown, ChevronUp, Book } from "lucide-react";
 
 interface StoryCardProps {
   story: Story;
@@ -8,8 +9,14 @@ interface StoryCardProps {
 }
 
 const StoryCard: React.FC<StoryCardProps> = ({ story, featured = false }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpanded = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
-    <Link to={`/read/${story.id}`} className={`comic-card block ${featured ? 'md:flex' : ''} bg-white dark:bg-comic-darkBg rounded-lg overflow-hidden shadow-lg`}>      
+    <div className={`comic-card block ${featured ? 'md:flex' : ''} bg-white dark:bg-comic-darkBg rounded-lg overflow-hidden shadow-lg`}>      
       <div className={`p-6 ${featured ? 'md:w-full' : ''}`}>
         {featured && (
           <div className="inline-block bg-comic-purple text-white px-3 py-1 text-xs rounded-full mb-3">
@@ -25,16 +32,33 @@ const StoryCard: React.FC<StoryCardProps> = ({ story, featured = false }) => {
         <p className={`text-gray-700 dark:text-gray-400 mb-4 ${featured ? '' : 'line-clamp-3'}`}>
           {story.summary}
         </p>
-        <div className="flex justify-start">
-          <span className="inline-flex items-center text-comic-purple hover:text-comic-darkPurple transition-colors font-semibold">
-            Read Now
-            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-            </svg>
-          </span>
-        </div>
+        
+        <button
+          onClick={toggleExpanded}
+          className="inline-flex items-center text-comic-purple hover:text-comic-darkPurple transition-colors font-semibold mb-4"
+        >
+          <Book className="w-4 h-4 mr-2" />
+          {isExpanded ? 'Hide Story' : 'Read Full Story'}
+          {isExpanded ? 
+            <ChevronUp className="w-4 h-4 ml-2" /> : 
+            <ChevronDown className="w-4 h-4 ml-2" />
+          }
+        </button>
+
+        {isExpanded && (
+          <div className="mt-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+            <h4 className="text-lg font-semibold mb-3 text-gray-800 dark:text-white">Full Story</h4>
+            <div className="prose prose-sm max-w-none dark:prose-invert">
+              {story.content.split('\n\n').map((paragraph, index) => (
+                <p key={index} className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
-    </Link>
+    </div>
   );
 };
 
