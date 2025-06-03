@@ -8,10 +8,6 @@ import { Link } from "react-router-dom";
 const Index = () => {
   console.log("Index component rendering");
   console.log("Stories loaded:", stories);
-  
-  // Check for any Lovable-related elements
-  console.log("Checking for Lovable elements in DOM:", document.querySelectorAll('[class*="lovable"], [id*="lovable"], [class*="gpt"], [id*="gpt"]'));
-  
   // Get the featured story
   const featuredStory = stories.find(story => story.featured);
   console.log("Featured story:", featuredStory);
