@@ -24,7 +24,7 @@ To understand this concept better, he chose some of his favorite emulator and pc
 
 Now to the final round, the kid chose to be the Ethan of Pokémon Crystal, and Variant chose to be Red. He defeated all the Pokémons of Ethan easily. But somehow the battle didn't end. Variant was furious about the rules of game, suddenly everything came back to starting where the Pokémons of Ethan had full stats and full HP and similarly with Red. The Variant realised that kid wasn't playing real Pokémon Crystal on GBC machine, but in emulator app on some other device, which has extra features of quick save and quick load. Now, the strategy to win wasn't by defeating all the Pokémons of Ethan, but to drain the kid's energy until kid feds up enough to not load again. The kid lost in that battle more than 100000 times, but didn't gave up, because he had learned not to fed up with any situation while catching one of the rarest Pokémons. While, the kid had enough guts to not fed up, the Variant was exhausted by making the same efforts and defeating all Pokémon again and again. He understood why he couldn't check his future in timeline, because quick save and quick load may never allow him to win. The variant not just accepted his defeat but also sacrificed in guilt to underestimate the real one. Although, people could never sense that someone protected them from whom and what abomination was about to occur. The kid then went back to his life. Drone too started to find other apprentices chosen by the powerful teachers.`,
     published: "May 6, 2025",
-    featured: true
+    featured: false
   },
   {
     id: "videogamer-2",
