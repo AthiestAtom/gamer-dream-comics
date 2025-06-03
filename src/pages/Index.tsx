@@ -6,10 +6,16 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 const Index = () => {
+  console.log("Index component rendering");
+  console.log("Stories loaded:", stories);
+  
   // Get the featured story
   const featuredStory = stories.find(story => story.featured);
+  console.log("Featured story:", featuredStory);
+  
   // Get other stories
   const otherStories = stories.filter(story => !story.featured);
+  console.log("Other stories count:", otherStories.length);
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
