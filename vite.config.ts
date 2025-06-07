@@ -6,8 +6,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Set base path for GitHub Pages deployment
-  base: process.env.NODE_ENV === 'production' ? '/gamer-dream-comics/' : '/',
+  // Use root path for custom domain, subdirectory for GitHub Pages
+  base: process.env.GITHUB_PAGES_CUSTOM_DOMAIN === 'true' ? '/' : '/gamer-dream-comics/',
   server: {
     host: "::",
     port: 8080,
