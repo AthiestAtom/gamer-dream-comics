@@ -261,5 +261,46 @@ He had fled. No one followed. No records were kept. The man disappeared into the
 But this wasn't over yet. The man who had been healed was still infected and started spreading zombie virus in outskirts of a city, the Videogamer lived in. This led to zombie apocalypse which he later on tackled.`,
     published: "May 21, 2025",
     featured: false
+  },
+  {
+    id: "atom-3",
+    title: "Dark Room",
+    author: "Jashan Bansal",
+    summary: "We all long to explain ourselves to the ones we care about—but what if those explanations aren't just words, but weapons? And what if silence isn't peace, but a trap waiting to ignite?",
+    content: `Following the aftermath of the MINI COLLAB incident, Atom began to suffer from relentless nightmares in which the spirits of the deceased accused him of their deaths. Alongside these nightmares came vivid and disturbing visions of an alternate version of reality. In this distorted timeline, Atom, during his 12th-grade year, attended chemistry tuition in a location where the adjacent house belonged to a man secretly affiliated with an underground local organization. This group was involved in the unlawful breeding and sale of dangerous dogs, particularly Rottweilers, leading to numerous deaths across the country.
+
+In that altered reality, Atom had an altercation with the tuition teacher's neighbour over a dog, an encounter that escalated when the dog bit Kusam, a fellow student. Though the dog in question was not a Rottweiler, the incident prompted Kusam's parents to take legal action against the neighbour. Shortly afterward, a staged terrorist assault was carried out at the tuition centre. This mock siege turned the students into hostages, with Atom and Kusam being isolated in a separate holding cell. There were no guards present, no food supply, and no outside assistance.
+
+The real purpose behind the attack was to pressure Kusam's parents into withdrawing their complaint. Inside the cell, the situation mirrored the strange, unnatural conditions that were characteristic of Atom's powers and the phenomenon known as the WHITE ROOM. Just like in those mysterious conditions, escape was impossible without a severe cost. Kusam managed to escape with the help of Atom's bones and aid in rescuing the other students, but Atom, unlike in other scenarios, possessed no abilities in this version of the timeline—and he was dead.
+
+This timeline appeared to perfectly prevent the events of MINI COLLAB, which haunted Atom in his dreams. These dreams made him question whether his survival in the original timeline was the reason for the chaos that unfolded. He began to wonder whether his death might have been the necessary sacrifice to stop the apocalypse.
+
+Despite the mental burden, Atom moved forward into his next semester. As the new academic term began, he was shocked to see Kusam—now an NRI—enrolled in his very batch. The coincidence struck him as uncanny, but he kept his emotions guarded. His batchmates often told tales about his odd behaviour around campus. Many treated him as a joke, spreading rumours that he consumed drugs during lectures or was a chronic womanizer. Yet, a few defended him, clarifying that he had never even spoken to a girl, let alone had any kind of intimate relationship.
+
+One such rumour—that he kept a weed pouch—was debunked when a sick classmate was offered the supposed contraband by Atom, which turned out to be licorice, bitter to the taste. Over time, despite the gossip and speculation, one fact became clear to all: Kusam seemed to be closely observing Atom. Strangely, he kept his distance from her and most women in general. Even Pandey, another classmate, had a conversation with Kusam where she admitted her past emotional instability, promising not to dwell on earlier events.
+
+Kusam's persistent presence made Atom uncomfortable. Eventually, he filed a complaint. However, the oddity of the situation led the faculty to downplay it. They encouraged Atom to remain composed, suggesting he be supportive of foreign students for the college's reputation. Their paths crossed again when they were paired for a group project by an assessment teacher. During this collaboration, Kusam confided in Atom, revealing that her entire family had perished during the MINI COLLAB disaster.
+
+This revelation struck a chord with Atom, who empathized with her loss and extended the hand of friendship. Yet, this friendship was unconventional. They did not share meals, hang out, or even acknowledge simple social cues. Kusam hesitated to shake his hand, fearing rejection. Their rapport was more silence than connection.
+
+One day, while both stayed late in the lab and were packing up their belongings, Kusam leaned toward Atom in an apparent attempt to kiss him. Atom, caught off guard, recoiled and pushed her away. As confusion and tension surged, the world around them seemed to fracture. Atom began to suspect his uncontrollable powers were once again resurfacing.
+
+But the twist wasn't supernatural—it was orchestrated. Kusam confessed that she had been preparing for this moment. She claimed Atom's nightmares were not illusions but echoes of reality. She spoke of a dream she had a year prior in which her deceased grandmother visited her. According to Kusam, this dream explained that reality had been tampered with due to infinite time resets performed by someone called Videogamer. Her grandmother had allegedly revealed secrets about the origin of their powers. Kusam's grandmother, known for her role as an arbiter of truth aka Lawyer, had once been associated with her brother aka Psycho who passed on powers to Atom. This man and the grandmother had opposing philosophies, and after a major dispute, they separated.
+
+Kusam was asked by her to avenge her family. Her grandmother's powers were passed to Kusam in that dream, and she began tracking down the heir to the opposing force—Atom. Believing that only Atom could access the strength needed to stop Videogamer, Kusam crafted a long-term plan to get close to him. Her emotional motivations were complex: though she loved him in part due to what her grandmother revealed about his past sacrifices, she also aimed to draw out his powers by evoking strong emotions, possibly even killing him to absorb what he held, which he indeed been wishing for.
+
+As the tension climaxed, the setting warped into what resembled a courtroom—an abstract void with two opposing witness boxes. Atom stood in one, Kusam in the other. The rules were unknown but brutal: whoever delivered painful truths about the other would inflict damage, both psychological and physical.
+
+Kusam began, recounting an alleged past where Atom stole possessions and sold them for petty business. The statement jolted Atom with electrical pain. She escalated her accusations, claiming that Atom always sought domination, once even hurting a mutual friend named Gurveer with a careless garbage throw, and that he enjoyed killing insects. Each assertion triggered increasingly violent shocks to Atom's body.
+
+Then came a claim that Atom's vulgar thoughts had destroyed her childhood. This time, the attack failed. Atom defended himself, stating that he had no knowledge of such thoughts and was falsely accused. As he spoke, Kusam suffered a similar electric backlash. She continued, saying Atom created obscene cartoons and clay models, but Atom explained that his artworks always depicted genderless, blended anatomy—he didn't even understand what differentiated male from female at the time. His creations, misunderstood and mocked, were actually proof of his ignorance, not perversion.
+
+Kusam reeled from the emotional and physical force of his rebuttal but managed one final claim: that Atom once chased after another girl named Gurenayat, then later shifted his interest to her, driven by desire. Atom admitted Gurenayat had once been a youthful crush, but Kusam's kindness had led him to momentarily admire her—only to later regret it when he saw her emotional distance. His avoidance of women was a choice rooted in respect, not lust.
+
+The truth stunned the space around them. Kusam's form convulsed violently before combusting into flame. Atom, still standing, watched as the surreal courtroom dissolved. A swirl of energy spiralled into his hands, signifying the fusion of powers from both lineages.
+
+Returning to the waking world, Atom sought out Dictator with a plea—to manage the unexplained disappearance of Kusam. Meanwhile, the narrative jumped back twelve years into the past, to a slum neighbourhood where a baby was born: Nishant Chaitanya, later to be known as Mr. Effort.`,
+    published: "June 8, 2025",
+    featured: false
   }
 ];

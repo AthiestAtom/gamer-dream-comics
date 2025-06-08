@@ -115,13 +115,15 @@ export const characters: Character[] = [
     id: "atom",
     name: "Atom (The Pyscho)",
     role: "Protagonist",
-    description: "A college student who was once a mathematics and science topper. Introverted and sometimes perceived as arrogant, he sacrificed himself in the White Room to help his former classmate escape, only to be granted supernatural powers after death.",
+    description: "A college student who was once a mathematics and science topper. Introverted and sometimes perceived as arrogant, he sacrificed himself in the White Room to help his former classmate escape, only to be granted supernatural powers after death. Following the MINI COLLAB incident, he suffers from relentless nightmares and guilt over the deaths he believes he caused. His powers have evolved to include memory projection and the ability to absorb abilities from other power lineages through confrontation.",
     abilities: [
       "Creating white room battle dimensions",
       "Teleportation of targets into the white room",
-      "Memory projection",
+      "Memory projection and sharing",
       "Self-sacrifice capability",
-      "Tactical thinking under pressure"
+      "Tactical thinking under pressure",
+      "Power absorption through truth confrontation",
+      "Dark room manifestation (courtroom-like dimension)"
     ],
     relatedStory: "atom-1"
   },
@@ -163,6 +165,50 @@ export const characters: Character[] = [
       "Target selection"
     ],
     relatedStory: "atom-1"
+  },
+  {
+    id: "origin-psycho",
+    name: "Origin Psycho (The Mysterious Being)",
+    role: "Antagonist",
+    description: "The original mastermind behind the White Room dimension and the brother of the Origin Lawyer. He possessed the power to force people into deadly battles within his white room dimension until one died. After witnessing Atom's sacrifice, he granted his powers to Atom before being killed by him. His philosophy of using power through force and domination opposed his sister's belief in truth and justice. Their ideological split created two opposing power lineages that would later clash through their successors.",
+    abilities: [
+      "White Room creation and control",
+      "Forced battle initiation",
+      "Dimensional manipulation",
+      "Power bestowal",
+      "Death-based power activation"
+    ],
+    relatedStory: "atom-1"
+  },
+  {
+    id: "kusam",
+    name: "Kusam (The Lawyer)",
+    role: "Antagonist",
+    description: "An NRI student who enrolled in Atom's college batch after her family perished in the MINI COLLAB disaster. Initially appearing as a fellow survivor seeking connection, she was actually the heir to the Origin Lawyer's powers, passed down through her grandmother's spirit. She spent months observing and getting close to Atom as part of a long-term plan to either force him to stop the Videogamer or absorb his abilities herself. Her complex emotions included both love for Atom's past sacrifices and a desire for vengeance. She possessed the power to create a Dark Room - a courtroom-like dimension where truth becomes a weapon.",
+    abilities: [
+      "Dark Room creation (courtroom dimension)",
+      "Truth-based combat and damage infliction",
+      "Emotional manipulation and observation",
+      "Strategic long-term planning",
+      "Power inheritance through ancestral connection",
+      "Reality perception beyond normal timelines"
+    ],
+    relatedStory: "atom-3"
+  },
+  {
+    id: "origin-lawyer",
+    name: "Origin Lawyer (Kusam's Grandmother)",
+    role: "Supporting Character",
+    description: "The sister of the Origin Psycho and the original holder of the Lawyer powers. Known for her role as an arbiter of truth and justice, she believed in using power through honesty and moral confrontation rather than force. After a major philosophical dispute with her brother, they separated, creating two opposing power lineages. She appeared to Kusam in a dream after the MINI COLLAB disaster to pass on her powers and reveal the truth about reality manipulation caused by the Videogamer's time resets. Her legacy lives on through Kusam's abilities to weaponize truth in the Dark Room dimension.",
+    abilities: [
+      "Truth arbitration and justice enforcement",
+      "Dark Room dimensional creation",
+      "Post-death spiritual communication",
+      "Power inheritance bestowal",
+      "Reality perception and knowledge",
+      "Truth-based combat techniques"
+    ],
+    relatedStory: "atom-3"
   },
   {
     id: "yuvi",
