@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { stories } from "../data/stories";
 import StoryCard from "../components/StoryCard";
@@ -65,8 +64,7 @@ const Stories = () => {
             <Book className="h-8 w-8 text-comic-purple" />
           </div>
           <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-            Dive into a world where gaming abilities merge with reality. Follow our characters as they navigate worlds 
-            where the line between virtual and real becomes increasingly blurred.
+            Explore stories of warriors and experts who use different forms of manipulation and specialized knowledge to challenge power structures and work toward decentralization in their respective worlds.
           </p>
         </section>
         

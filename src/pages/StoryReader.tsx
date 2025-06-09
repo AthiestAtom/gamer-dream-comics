@@ -1,13 +1,22 @@
 
-import { useParams, Link } from "react-router-dom";
+import { useState, useParams, Link } from "react-router-dom";
 import { stories } from "../data/stories";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { ArrowLeft, Book } from "lucide-react";
+import { ArrowLeft, Book, Plus, Minus, Type } from "lucide-react";
 
 const StoryReader = () => {
   const { storyId } = useParams<{ storyId: string }>();
   const story = stories.find(s => s.id === storyId);
+  const [fontSize, setFontSize] = useState(18); // Default font size in px
+
+  const increaseFontSize = () => {
+    if (fontSize < 24) setFontSize(fontSize + 2);
+  };
+
+  const decreaseFontSize = () => {
+    if (fontSize > 12) setFontSize(fontSize - 2);
+  };
 
   if (!story) {
     return (
@@ -51,14 +60,37 @@ const StoryReader = () => {
             Back to Stories
           </Link>
 
-          {/* Story Header */}
+          {/* Story Header with Font Controls */}
           <div className="bg-white dark:bg-comic-darkBg rounded-lg shadow-lg p-8 mb-8">
-            <div className="flex items-center mb-4">
-              <Book className="h-8 w-8 text-comic-purple mr-3" />
-              <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
-                {story.title}
-              </h1>
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center">
+                <Book className="h-8 w-8 text-comic-purple mr-3" />
+                <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
+                  {story.title}
+                </h1>
+              </div>
+              
+              {/* Font Size Controls */}
+              <div className="flex items-center space-x-2 bg-gray-100 dark:bg-gray-800 rounded-lg p-2">
+                <Type className="h-4 w-4 text-gray-600 dark:text-gray-400" />
+                <button
+                  onClick={decreaseFontSize}
+                  className="p-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded transition-colors"
+                  disabled={fontSize <= 12}
+                >
+                  <Minus className="h-4 w-4" />
+                </button>
+                <span className="text-sm font-medium px-2">{fontSize}px</span>
+                <button
+                  onClick={increaseFontSize}
+                  className="p-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded transition-colors"
+                  disabled={fontSize >= 24}
+                >
+                  <Plus className="h-4 w-4" />
+                </button>
+              </div>
             </div>
+            
             <p className="text-gray-600 dark:text-gray-300 mb-4">
               By {story.author} • Published {story.published}
             </p>
@@ -75,7 +107,11 @@ const StoryReader = () => {
             <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-white">Full Story</h2>
             <div className="prose prose-lg max-w-none dark:prose-invert">
               {story.content.split('\n\n').map((paragraph, index) => (
-                <p key={index} className="mb-6 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                <p 
+                  key={index} 
+                  className="mb-6 text-gray-700 dark:text-gray-300 leading-relaxed"
+                  style={{ fontSize: `${fontSize}px` }}
+                >
                   {paragraph}
                 </p>
               ))}

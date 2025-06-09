@@ -9,6 +9,7 @@ import Characters from "./pages/Characters";
 import NotFound from "./pages/NotFound";
 import Stories from "./pages/Stories";
 import StoryReader from "./pages/StoryReader";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/characters" element={<Characters />} />
           <Route path="/stories" element={<Stories />} />
           <Route path="/read/:storyId" element={<StoryReader />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

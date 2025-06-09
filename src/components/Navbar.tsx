@@ -1,6 +1,6 @@
 
 import { Link, useLocation } from "react-router-dom";
-import { Book, Users } from "lucide-react";
+import { Book, Users, User } from "lucide-react";
 
 const Navbar: React.FC = () => {
   const location = useLocation();
@@ -42,6 +42,13 @@ const Navbar: React.FC = () => {
           >
             <Users className="mr-1 h-4 w-4" />
             Characters
+          </Link>
+          <Link 
+            to="/about" 
+            className={`flex items-center ${isActive('/about')}`}
+          >
+            <User className="mr-1 h-4 w-4" />
+            About
           </Link>
         </div>
       </div>

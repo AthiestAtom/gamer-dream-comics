@@ -76,10 +76,10 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 dark:text-gray-100">About Life Could Be A Dream</h2>
           <div className="prose prose-lg max-w-4xl mx-auto dark:prose-invert">
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              Life Could Be A Dream is a collection of original stories that blend gaming mechanics, politics, science fiction, drama and comedy with real-world scenarios. Written by Jashan Bansal, these stories explore what happens when different manipulation abilities manifest in reality.
+              Life Could Be A Dream is a collection of original stories that explore the complex dynamics of power, expertise, and social change. Written by Jashan Bansal, these stories feature warriors and specialists with different forms of manipulation abilities, all working toward themes of decentralization and individual empowerment.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
-              Follow our characters as they navigate worlds where the line between virtual and real becomes increasingly blurred. Each story offers a unique perspective on how gaming skills and persistence can overcome seemingly impossible challenges.
+              Each story examines how specialized knowledge and skills can challenge traditional power structures. From technological expertise to psychological insight, these characters represent various approaches to creating meaningful change in society through their unique forms of manipulation and expertise.
             </p>
           </div>
         </section>

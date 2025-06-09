@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
               <span className="text-comic-softBlue">D</span>ream
             </Link>
             <p className="mt-2 text-gray-300 max-w-md">
-              A collection of original comic stories about gaming, alternate realities, and extraordinary powers.
+              Original stories exploring themes of manipulation expertise, decentralization, and the various forms of power that shape our world.
             </p>
           </div>
           
@@ -32,8 +32,8 @@ const Footer: React.FC = () => {
             <div>
               <h4 className="text-lg font-semibold mb-3">Connect</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-300 hover:text-comic-purple transition-colors">About the Author</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-comic-purple transition-colors">Contact</a></li>
+                <li><Link to="/about" className="text-gray-300 hover:text-comic-purple transition-colors">About the Author</Link></li>
+                <li><a href="mailto:cec235008.aids.cec@cgc.edu.in" className="text-gray-300 hover:text-comic-purple transition-colors">Contact</a></li>
               </ul>
             </div>
           </div>
