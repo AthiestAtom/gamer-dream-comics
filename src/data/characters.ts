@@ -1,3 +1,4 @@
+
 export interface Character {
   id: string;
   name: string;
@@ -154,21 +155,8 @@ export const characters: Character[] = [
     relatedStory: "atom-2"
   },
   {
-    id: "white-room-master",
-    name: "White Room Master",
-    role: "Antagonist",
-    description: "The mysterious being who granted Atom his powers after witnessing his sacrifice. He had previously gained the ability to create the White Room dimension and force people to battle within it.",
-    abilities: [
-      "White Room creation",
-      "Dimensional manipulation",
-      "Power bestowal",
-      "Target selection"
-    ],
-    relatedStory: "atom-1"
-  },
-  {
     id: "origin-psycho",
-    name: "Origin Psycho (The Mysterious Being)",
+    name: "Origin Psycho (The White Room Master)",
     role: "Antagonist",
     description: "The original mastermind behind the White Room dimension and the brother of the Origin Lawyer. He possessed the power to force people into deadly battles within his white room dimension until one died. After witnessing Atom's sacrifice, he granted his powers to Atom before being killed by him. His philosophy of using power through force and domination opposed his sister's belief in truth and justice. Their ideological split created two opposing power lineages that would later clash through their successors.",
     abilities: [
