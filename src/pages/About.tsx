@@ -1,52 +1,75 @@
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { User, Mail, Linkedin, MessageSquare } from "lucide-react";
+import { User, Mail, Linkedin, MessageSquare, GraduationCap, BookOpen, Atom } from "lucide-react";
 
 const About = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 matrix-bg">
       <Navbar />
       
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           {/* Page Header */}
-          <section className="py-12 text-center">
-            <div className="flex justify-center mb-6">
-              <User className="h-16 w-16 text-comic-purple" />
+          <section className="py-12 text-center slide-in-up">
+            <div className="flex justify-center mb-6 floating">
+              <User className="h-16 w-16 text-cyan-400 neon-glow" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-comic-darkPurple dark:text-comic-purple">
+            <h1 className="text-5xl md:text-6xl font-bold mb-4 cyberpunk-text">
               About the Author
             </h1>
-            <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-              Meet Jashan Bansal, the creative mind behind Life Could Be A Dream
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto typing-effect">
+              Meet Jashan Bansal, the visionary behind Life Could Be A Dream
             </p>
           </section>
 
           {/* Author Bio */}
-          <section className="bg-white dark:bg-comic-darkBg rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-white">Jashan Bansal</h2>
-            <div className="prose prose-lg max-w-none dark:prose-invert">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                Jashan Bansal is a storyteller who explores the intersection of human nature, power, and society through compelling narratives. 
-                His work in "Life Could Be A Dream" delves into complex themes of manipulation, decentralization, and the various forms of expertise 
-                that shape our world.
-              </p>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                Through his stories, Jashan examines how different types of warriors and experts navigate a world where traditional power 
-                structures are challenged. His characters represent various forms of manipulation and expertise, from technological prowess 
-                to psychological insight, all working toward themes of decentralization and individual empowerment.
-              </p>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                Each story in the collection offers a unique perspective on how specialized knowledge and skills can be used to overcome 
-                systemic challenges and create meaningful change in society.
+          <section className="glass-card rounded-xl p-8 mb-8 card-hover slide-in-left">
+            <div className="flex items-center mb-6">
+              <div className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full flex items-center justify-center mr-6 pulse-intense">
+                <span className="text-3xl font-bold text-white">JB</span>
+              </div>
+              <div>
+                <h2 className="text-4xl font-bold text-white cyberpunk-text">Jashan Bansal</h2>
+                <div className="flex items-center mt-2 text-cyan-400">
+                  <GraduationCap className="h-5 w-5 mr-2" />
+                  <span className="text-lg">BTech AI&DS • CGC Landran, Punjab</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div className="flex items-center text-cyan-400 mb-3">
+                  <BookOpen className="h-6 w-6 mr-3" />
+                  <h3 className="text-xl font-semibold">Passionate Storyteller</h3>
+                </div>
+                <p className="text-gray-300 leading-relaxed">
+                  Passionate about sci-fi story writing and scientific theories, I craft narratives that blend cutting-edge technology with human emotion and moral complexity.
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex items-center text-purple-400 mb-3">
+                  <Atom className="h-6 w-6 mr-3" />
+                  <h3 className="text-xl font-semibold">Scientific Explorer</h3>
+                </div>
+                <p className="text-gray-300 leading-relaxed">
+                  I unfold the mysteries of blurred parts of life, weaving scientific theories into compelling stories that challenge conventional thinking and explore the boundaries of possibility.
+                </p>
+              </div>
+            </div>
+            
+            <div className="mt-6 p-4 bg-gradient-to-r from-purple-800/30 to-cyan-800/30 rounded-lg border border-cyan-500/30">
+              <p className="text-gray-300 leading-relaxed text-center italic">
+                "Through my stories, I use morals as the foundation to explore complex themes of manipulation, expertise, and the various forms of power that shape our world."
               </p>
             </div>
           </section>
 
           {/* Contact Section */}
-          <section className="bg-white dark:bg-comic-darkBg rounded-lg shadow-lg p-8">
-            <h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-white">Get in Touch</h2>
+          <section className="glass-card rounded-xl p-8 slide-in-right">
+            <h2 className="text-4xl font-bold mb-8 text-center cyberpunk-text">Get in Touch</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               
               {/* LinkedIn */}
@@ -54,12 +77,12 @@ const About = () => {
                 href="https://www.linkedin.com/in/jashan-bansal-02309b317?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BibA3z7p7SXSHMiLSicKQ5A%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center p-6 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
+                className="btn-futuristic flex flex-col items-center p-6 rounded-xl group fade-in-stagger"
               >
-                <Linkedin className="h-12 w-12 text-comic-purple mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">LinkedIn</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-center text-sm">
-                  Connect professionally and follow my journey
+                <Linkedin className="h-12 w-12 text-cyan-400 mb-4 group-hover:scale-125 transition-transform duration-300" />
+                <h3 className="text-xl font-semibold mb-2 text-white">LinkedIn</h3>
+                <p className="text-gray-300 text-center text-sm">
+                  Connect professionally
                 </p>
               </a>
 
@@ -68,24 +91,24 @@ const About = () => {
                 href="https://tellonym.me/hail_athiesm_atom"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center p-6 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
+                className="btn-futuristic flex flex-col items-center p-6 rounded-xl group fade-in-stagger"
               >
-                <MessageSquare className="h-12 w-12 text-comic-purple mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Tellonym</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-center text-sm">
-                  Send anonymous messages and feedback
+                <MessageSquare className="h-12 w-12 text-purple-400 mb-4 group-hover:scale-125 transition-transform duration-300" />
+                <h3 className="text-xl font-semibold mb-2 text-white">Tellonym</h3>
+                <p className="text-gray-300 text-center text-sm">
+                  Anonymous feedback
                 </p>
               </a>
 
               {/* Email */}
               <a 
                 href="mailto:cec235008.aids.cec@cgc.edu.in"
-                className="flex flex-col items-center p-6 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
+                className="btn-futuristic flex flex-col items-center p-6 rounded-xl group fade-in-stagger"
               >
-                <Mail className="h-12 w-12 text-comic-purple mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Email</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-center text-sm">
-                  cec235008.aids.cec@cgc.edu.in
+                <Mail className="h-12 w-12 text-pink-400 mb-4 group-hover:scale-125 transition-transform duration-300" />
+                <h3 className="text-xl font-semibold mb-2 text-white">Email</h3>
+                <p className="text-gray-300 text-center text-sm">
+                  Direct contact
                 </p>
               </a>
             </div>

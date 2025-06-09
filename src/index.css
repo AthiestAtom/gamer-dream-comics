@@ -69,23 +69,6 @@
   }
 }
 
-@layer utilities {
-  .animate-fade-in {
-    animation: fadeIn 0.8s ease-in-out;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
-
 /* Custom color classes for the comic theme */
 :root {
   --comic-purple: #7C3AED;
@@ -93,6 +76,10 @@
   --comic-softOrange: #FB923C;
   --comic-softBlue: #60A5FA;
   --comic-darkBg: #1E1B4B;
+  --neon-cyan: #00FFFF;
+  --neon-pink: #FF1493;
+  --neon-green: #39FF14;
+  --electric-blue: #0080FF;
 }
 
 .text-comic-purple { color: var(--comic-purple); }
@@ -107,9 +94,249 @@
 .hover\:bg-comic-darkPurple:hover { background-color: var(--comic-darkPurple); }
 .hover\:text-comic-purple:hover { color: var(--comic-purple); }
 
+/* Advanced Animations and Cool Effects */
+@layer utilities {
+  /* Futuristic Glowing Button */
+  .btn-futuristic {
+    @apply relative px-8 py-4 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 text-white font-bold rounded-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl;
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease infinite;
+  }
+  
+  .btn-futuristic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+  }
+  
+  .btn-futuristic:hover::before {
+    left: 100%;
+  }
+
+  /* Neon Glow Effect */
+  .neon-glow {
+    text-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan), 0 0 15px var(--neon-cyan), 0 0 20px var(--neon-cyan);
+    animation: flicker 2s infinite alternate;
+  }
+
+  /* Card Hover Animation */
+  .card-hover {
+    @apply transition-all duration-500 transform hover:scale-105 hover:rotate-1 hover:shadow-2xl;
+    background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+
+  /* Pulse Animation */
+  .pulse-intense {
+    animation: pulseIntense 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  /* Typing Effect */
+  .typing-effect {
+    overflow: hidden;
+    border-right: 3px solid var(--neon-cyan);
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
+  /* Floating Animation */
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+
+  /* Slide In Animations */
+  .slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+  }
+
+  .slide-in-up {
+    animation: slideInUp 0.8s ease-out;
+  }
+
+  /* Fade In Stagger */
+  .fade-in-stagger {
+    animation: fadeInStagger 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  .fade-in-stagger:nth-child(1) { animation-delay: 0.1s; }
+  .fade-in-stagger:nth-child(2) { animation-delay: 0.2s; }
+  .fade-in-stagger:nth-child(3) { animation-delay: 0.3s; }
+  .fade-in-stagger:nth-child(4) { animation-delay: 0.4s; }
+
+  /* 3D Flip Card */
+  .flip-card {
+    perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Keyframe Animations */
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes flicker {
+  0%, 100% { 
+    text-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan), 0 0 15px var(--neon-cyan), 0 0 20px var(--neon-cyan);
+  }
+  50% { 
+    text-shadow: 0 0 2px var(--neon-cyan), 0 0 5px var(--neon-cyan), 0 0 8px var(--neon-cyan), 0 0 12px var(--neon-cyan);
+  }
+}
+
+@keyframes pulseIntense {
+  0%, 100% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--neon-cyan); }
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInStagger {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 /* Hide Lovable badge */
 #lovable-badge {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
+}
+
+/* Glassmorphism Effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Cyberpunk Text Effect */
+.cyberpunk-text {
+  background: linear-gradient(45deg, var(--neon-cyan), var(--neon-pink), var(--neon-green));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease infinite;
+}
+
+/* Matrix Rain Effect Background */
+.matrix-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.matrix-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(90deg, transparent 98%, var(--neon-green) 100%),
+    linear-gradient(180deg, transparent 98%, var(--neon-green) 100%);
+  background-size: 20px 20px;
+  animation: matrixMove 20s linear infinite;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+@keyframes matrixMove {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
 }
