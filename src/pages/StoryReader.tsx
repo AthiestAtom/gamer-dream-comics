@@ -1,5 +1,6 @@
 
-import { useState, useParams, Link } from "react-router-dom";
+import { useState } from "react";
+import { useParams, Link } from "react-router-dom";
 import { stories } from "../data/stories";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
