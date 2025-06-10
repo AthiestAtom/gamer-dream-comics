@@ -4,7 +4,7 @@ import { stories } from "../data/stories";
 import StoryCard from "../components/StoryCard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Book, ChevronDown, ChevronUp } from "lucide-react";
+import { Book, ChevronDown, ChevronUp, Zap, Sparkles } from "lucide-react";
 
 // Helper function to group stories by series
 const getSeriesFromStoryId = (id: string) => {
@@ -52,44 +52,52 @@ const Stories = () => {
   };
   
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 matrix-bg">
       <Navbar />
       
       <main className="flex-grow container mx-auto px-4 py-8">
         {/* Page Header */}
-        <section className="py-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-comic-darkPurple dark:text-comic-purple">
+        <section className="py-16 text-center slide-in-up">
+          <div className="flex justify-center mb-8 floating">
+            <Book className="h-16 w-16 text-cyan-400 neon-glow" />
+          </div>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 cyberpunk-text">
             Stories
           </h1>
-          <div className="flex justify-center mb-8">
-            <Book className="h-8 w-8 text-comic-purple" />
-          </div>
-          <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 typing-effect">
             Explore stories of warriors and experts who use different forms of manipulation and specialized knowledge to challenge power structures and work toward decentralization in their respective worlds.
           </p>
         </section>
         
         {/* Stories List */}
         <section className="py-8">
-          {Object.entries(storiesByCategory).map(([category, categoryStories]) => (
-            <div key={category} className="mb-12">
+          {Object.entries(storiesByCategory).map(([category, categoryStories], index) => (
+            <div key={category} className="mb-12 fade-in-stagger" style={{animationDelay: `${index * 0.1}s`}}>
               <div 
-                className="flex items-center justify-between cursor-pointer bg-white dark:bg-gray-800 rounded-lg p-4 mb-6 shadow-md hover:shadow-lg transition-shadow"
+                className="glass-card cursor-pointer rounded-xl p-6 mb-8 card-hover flex items-center justify-between group"
                 onClick={() => toggleSection(category)}
               >
-                <h2 className="text-2xl font-bold text-comic-darkPurple dark:text-comic-purple">
-                  {category} Series
-                </h2>
-                {collapsedSections[category] ? 
-                  <ChevronDown className="h-6 w-6 text-comic-purple" /> : 
-                  <ChevronUp className="h-6 w-6 text-comic-purple" />
-                }
+                <div className="flex items-center">
+                  <Zap className="h-8 w-8 text-cyan-400 mr-4 group-hover:text-yellow-400 transition-colors" />
+                  <h2 className="text-3xl font-bold cyberpunk-text">
+                    {category} Series
+                  </h2>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-gray-400 mr-3">{categoryStories.length} stories</span>
+                  {collapsedSections[category] ? 
+                    <ChevronDown className="h-8 w-8 text-purple-400 group-hover:text-cyan-400 transition-colors" /> : 
+                    <ChevronUp className="h-8 w-8 text-purple-400 group-hover:text-cyan-400 transition-colors" />
+                  }
+                </div>
               </div>
               
               {!collapsedSections[category] && (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 animate-fade-in">
-                  {categoryStories.map(story => (
-                    <StoryCard key={story.id} story={story} />
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 slide-in-up">
+                  {categoryStories.map((story, storyIndex) => (
+                    <div key={story.id} className="fade-in-stagger" style={{animationDelay: `${storyIndex * 0.1}s`}}>
+                      <StoryCard story={story} />
+                    </div>
                   ))}
                 </div>
               )}

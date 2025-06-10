@@ -4,6 +4,7 @@ import StoryCard from "../components/StoryCard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import { Sparkles, Zap, Book } from "lucide-react";
 
 const Index = () => {
   console.log("Index component rendering");
@@ -18,29 +19,35 @@ const Index = () => {
   console.log("Other stories count:", otherStories.length);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 matrix-bg">
       <Navbar />
       
       <main className="flex-grow container mx-auto px-4 py-8">
         {/* Hero Section */}
-        <section className="py-12 md:py-20 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-comic-darkPurple dark:text-comic-purple animate-fade-in">
+        <section className="py-16 text-center slide-in-up">
+          <div className="flex justify-center mb-8 floating">
+            <Sparkles className="h-20 w-20 text-cyan-400 neon-glow" />
+          </div>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 cyberpunk-text">
             Welcome to Life Could Be A Dream
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-            Original stories where warriors with expertise in different kinds of manipulation focus on decentralisation
+          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto mb-12 typing-effect">
+            Explore the complex dynamics of power, expertise, and manipulation in worlds where warriors challenge traditional structures through specialized knowledge and unique abilities.
           </p>
-          <div className="flex justify-center space-x-4">
+          <div className="flex justify-center space-x-6 fade-in-stagger">
             <Link 
               to="/stories" 
-              className="bg-comic-purple hover:bg-comic-darkPurple text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-lg"
+              className="btn-futuristic flex items-center group"
             >
+              <Book className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
               Browse Stories
+              <Zap className="w-4 h-4 ml-2 group-hover:text-yellow-400 transition-colors" />
             </Link>
             <Link 
               to="/characters" 
-              className="bg-transparent border-2 border-comic-purple text-comic-purple hover:bg-comic-purple hover:text-white font-bold py-3 px-6 rounded-lg transition-colors"
+              className="relative px-8 py-4 bg-gradient-to-r from-purple-600/80 to-cyan-600/80 text-white font-bold rounded-lg border border-purple-500/50 hover:border-cyan-400/50 transition-all duration-300 transform hover:scale-105 flex items-center group backdrop-blur-sm"
             >
+              <Sparkles className="w-5 h-5 mr-2 group-hover:text-yellow-400 transition-colors" />
               Meet Characters
             </Link>
           </div>
@@ -48,39 +55,51 @@ const Index = () => {
         
         {/* Featured Story Section */}
         {featuredStory && (
-          <section className="py-12">
-            <h2 className="text-3xl font-bold mb-8 text-center text-gray-800 dark:text-gray-100">Featured Story</h2>
+          <section className="py-16 slide-in-left">
+            <h2 className="text-4xl font-bold mb-12 text-center cyberpunk-text flex items-center justify-center">
+              <Zap className="w-8 h-8 mr-3 text-cyan-400" />
+              Featured Story
+            </h2>
             <StoryCard story={featuredStory} featured={true} />
           </section>
         )}
         
         {/* Latest Stories Section */}
         {otherStories.length > 0 && (
-          <section className="py-12">
-            <h2 className="text-3xl font-bold mb-8 text-center text-gray-800 dark:text-gray-100">Latest Stories</h2>
+          <section className="py-16 slide-in-right">
+            <h2 className="text-4xl font-bold mb-12 text-center cyberpunk-text flex items-center justify-center">
+              <Book className="w-8 h-8 mr-3 text-purple-400" />
+              Latest Stories
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {otherStories.map(story => (
-                <StoryCard key={story.id} story={story} />
-              ))}
-              {otherStories.length === 0 && (
-                <div className="col-span-full text-center py-8">
-                  <p className="text-gray-500 dark:text-gray-400">More stories coming soon!</p>
+              {otherStories.map((story, index) => (
+                <div key={story.id} className="fade-in-stagger" style={{animationDelay: `${index * 0.1}s`}}>
+                  <StoryCard story={story} />
                 </div>
-              )}
+              ))}
             </div>
           </section>
         )}
         
         {/* About Section */}
-        <section className="py-12 bg-white dark:bg-comic-darkBg rounded-lg shadow-lg p-8 my-12">
-          <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 dark:text-gray-100">About Life Could Be A Dream</h2>
-          <div className="prose prose-lg max-w-4xl mx-auto dark:prose-invert">
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              Life Could Be A Dream is a collection of original stories that explore the complex dynamics of power, expertise, and social change. Written by Jashan Bansal, these stories feature warriors and specialists with different forms of manipulation abilities, all working toward themes of decentralization and individual empowerment.
-            </p>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
-              Each story examines how specialized knowledge and skills can challenge traditional power structures. From technological expertise to psychological insight, these characters represent various approaches to creating meaningful change in society through their unique forms of manipulation and expertise.
-            </p>
+        <section className="glass-card rounded-xl p-12 my-16 card-hover slide-in-up">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-6 cyberpunk-text flex items-center justify-center">
+              <Sparkles className="w-8 h-8 mr-3 text-cyan-400" />
+              About Life Could Be A Dream
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="space-y-6">
+              <p className="text-gray-300 leading-relaxed text-lg">
+                Life Could Be A Dream is a collection of original stories that explore the complex dynamics of power, expertise, and social change. Written by Jashan Bansal, these stories feature warriors and specialists with different forms of manipulation abilities.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <p className="text-gray-300 leading-relaxed text-lg">
+                Each story examines how specialized knowledge and skills can challenge traditional power structures through themes of decentralization and individual empowerment using various approaches to creating meaningful change.
+              </p>
+            </div>
           </div>
         </section>
       </main>
