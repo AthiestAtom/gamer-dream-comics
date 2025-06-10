@@ -31,7 +31,11 @@ const Index = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 cyberpunk-text">
             Welcome to Life Could Be A Dream
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto mb-12 typing-effect">
+          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto mb-12" style={{
+            overflow: 'visible',
+            whiteSpace: 'normal',
+            animation: 'typing 4s steps(120, end), blink-caret 0.75s step-end infinite'
+          }}>
             Explore the complex dynamics of power, expertise, and manipulation in worlds where warriors challenge traditional structures through specialized knowledge and unique abilities.
           </p>
           <div className="flex justify-center space-x-6 fade-in-stagger">

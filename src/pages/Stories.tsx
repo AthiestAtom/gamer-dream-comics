@@ -64,7 +64,11 @@ const Stories = () => {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 cyberpunk-text">
             Stories
           </h1>
-          <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 typing-effect">
+          <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8" style={{
+            overflow: 'visible',
+            whiteSpace: 'normal',
+            animation: 'typing 4s steps(120, end), blink-caret 0.75s step-end infinite'
+          }}>
             Explore stories of warriors and experts who use different forms of manipulation and specialized knowledge to challenge power structures and work toward decentralization in their respective worlds.
           </p>
         </section>
