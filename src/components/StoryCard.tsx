@@ -44,16 +44,18 @@ const StoryCard: React.FC<StoryCardProps> = ({ story, featured = false }) => {
         <div className="flex justify-center">
           <Link
             to={`/read/${story.id}`}
-            className="group relative overflow-hidden bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 text-white font-bold py-5 px-12 rounded-2xl transition-all duration-300 transform hover:scale-110 hover:shadow-2xl flex items-center justify-center text-lg"
+            className="group relative overflow-hidden bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center"
             style={{
               backgroundSize: '200% 200%',
-              animation: 'gradientShift 3s ease infinite'
+              animation: 'gradientShift 3s ease infinite',
+              width: '280px',
+              height: '40px'
             }}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-            <Book className="w-7 h-7 mr-4 group-hover:rotate-12 transition-transform relative z-10" />
-            <span className="relative z-10 text-xl font-extrabold">READ FULL STORY</span>
-            <ExternalLink className="w-6 h-6 ml-4 group-hover:translate-x-2 transition-transform relative z-10" />
+            <Book className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform relative z-10" />
+            <span className="relative z-10 font-extrabold">READ FULL STORY</span>
+            <ExternalLink className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform relative z-10" />
           </Link>
         </div>
       </div>
