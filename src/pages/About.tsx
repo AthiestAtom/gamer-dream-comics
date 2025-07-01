@@ -86,17 +86,17 @@ const About = () => {
                 </p>
               </a>
 
-              {/* Tellonym */}
+              {/* WhatsApp */}
               <a 
-                href="https://tellonym.me/hail_athiesm_atom"
+                href="https://wa.me/918283035000"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-futuristic flex flex-col items-center p-6 rounded-xl group fade-in-stagger"
               >
-                <MessageSquare className="h-12 w-12 text-purple-400 mb-4 group-hover:scale-125 transition-transform duration-300" />
-                <h3 className="text-xl font-semibold mb-2 text-white">Tellonym</h3>
+                <MessageSquare className="h-12 w-12 text-green-400 mb-4 group-hover:scale-125 transition-transform duration-300" />
+                <h3 className="text-xl font-semibold mb-2 text-white">WhatsApp</h3>
                 <p className="text-gray-300 text-center text-sm">
-                  Anonymous feedback
+                  Chat directly
                 </p>
               </a>
 
