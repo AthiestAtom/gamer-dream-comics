@@ -88,7 +88,7 @@ const About = () => {
 
               {/* WhatsApp */}
               <a 
-                href="https://wa.me/918283035000"
+                href="https://wa.me/+918283035000"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-futuristic flex flex-col items-center p-6 rounded-xl group fade-in-stagger"
