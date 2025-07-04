@@ -46,15 +46,15 @@ const Characters = () => {
           </p>
         </section>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto h-[600px]">
-          {/* Character Selection with Scroll */}
-          <div className="col-span-1 glass-card rounded-xl p-8 card-hover slide-in-left flex flex-col">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {/* Character Selection with Fixed Height and Scroll */}
+          <div className="col-span-1 glass-card rounded-xl p-6 card-hover slide-in-left h-[500px] flex flex-col">
             <h2 className="text-2xl font-bold mb-6 cyberpunk-text flex items-center">
               <Sparkles className="w-6 h-6 mr-3 text-cyan-400" />
               Select a Character
             </h2>
-            <ScrollArea className="flex-1 pr-4">
-              <div className="space-y-3">
+            <ScrollArea className="flex-1">
+              <div className="space-y-3 pr-4">
                 {characters.map((character, index) => (
                   <button
                     key={character.id}
@@ -75,9 +75,9 @@ const Characters = () => {
             </ScrollArea>
           </div>
           
-          {/* Character Details - Fixed Position */}
-          <div className="col-span-1 lg:col-span-2 glass-card rounded-xl overflow-hidden card-hover slide-in-right h-full">
-            <ScrollArea className="h-full">
+          {/* Character Details - Fixed Height with Internal Scroll */}
+          <div className="col-span-1 lg:col-span-2 glass-card rounded-xl card-hover slide-in-right h-[500px] flex flex-col">
+            <ScrollArea className="flex-1">
               <div className="p-8">
                 <div className="mb-6">
                   <Badge 
