@@ -5,6 +5,7 @@ import { characters } from "../data/characters";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Badge } from "@/components/ui/badge";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { Users, Zap, Sparkles, ExternalLink } from "lucide-react";
 
 const Characters = () => {
@@ -45,77 +46,81 @@ const Characters = () => {
           </p>
         </section>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {/* Character Selection */}
-          <div className="col-span-1 glass-card rounded-xl p-8 h-fit card-hover slide-in-left">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto h-[600px]">
+          {/* Character Selection with Scroll */}
+          <div className="col-span-1 glass-card rounded-xl p-8 card-hover slide-in-left flex flex-col">
             <h2 className="text-2xl font-bold mb-6 cyberpunk-text flex items-center">
               <Sparkles className="w-6 h-6 mr-3 text-cyan-400" />
               Select a Character
             </h2>
-            <div className="space-y-3">
-              {characters.map((character, index) => (
-                <button
-                  key={character.id}
-                  onClick={() => setSelectedCharacter(character)}
-                  className={`w-full text-left p-4 rounded-xl transition-all duration-300 transform hover:scale-105 ${
-                    selectedCharacter.id === character.id 
-                      ? 'bg-gradient-to-r from-cyan-500/80 to-purple-500/80 text-white border border-cyan-400/50 neon-glow' 
-                      : 'glass-card hover:border-purple-500/50 text-gray-200 border border-gray-600/30'
-                  }`}
-                >
-                  <div className="flex items-center">
-                    <Zap className="w-4 h-4 mr-2 text-cyan-400" />
-                    <span className="font-semibold">{character.name}</span>
-                  </div>
-                </button>
-              ))}
-            </div>
+            <ScrollArea className="flex-1 pr-4">
+              <div className="space-y-3">
+                {characters.map((character, index) => (
+                  <button
+                    key={character.id}
+                    onClick={() => setSelectedCharacter(character)}
+                    className={`w-full text-left p-4 rounded-xl transition-all duration-300 transform hover:scale-105 ${
+                      selectedCharacter.id === character.id 
+                        ? 'bg-gradient-to-r from-cyan-500/80 to-purple-500/80 text-white border border-cyan-400/50 neon-glow' 
+                        : 'glass-card hover:border-purple-500/50 text-gray-200 border border-gray-600/30'
+                    }`}
+                  >
+                    <div className="flex items-center">
+                      <Zap className="w-4 h-4 mr-2 text-cyan-400" />
+                      <span className="font-semibold">{character.name}</span>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </ScrollArea>
           </div>
           
-          {/* Character Details */}
-          <div className="col-span-1 lg:col-span-2 glass-card rounded-xl overflow-hidden card-hover slide-in-right">
-            <div className="p-8">
-              <div className="mb-6">
-                <Badge 
-                  className={`mb-4 px-4 py-2 text-sm font-bold ${getRoleBadgeVariant(selectedCharacter.role)} border-0`}
-                >
-                  {selectedCharacter.role}
-                </Badge>
-                <h3 className="text-4xl font-bold cyberpunk-text mb-2">{selectedCharacter.name}</h3>
-              </div>
-              
-              <div className="space-y-6">
-                <div className="p-6 bg-gradient-to-r from-purple-900/30 to-cyan-900/30 rounded-lg border border-cyan-500/30">
-                  <p className="text-gray-300 leading-relaxed text-lg">{selectedCharacter.description}</p>
+          {/* Character Details - Fixed Position */}
+          <div className="col-span-1 lg:col-span-2 glass-card rounded-xl overflow-hidden card-hover slide-in-right h-full">
+            <ScrollArea className="h-full">
+              <div className="p-8">
+                <div className="mb-6">
+                  <Badge 
+                    className={`mb-4 px-4 py-2 text-sm font-bold ${getRoleBadgeVariant(selectedCharacter.role)} border-0`}
+                  >
+                    {selectedCharacter.role}
+                  </Badge>
+                  <h3 className="text-4xl font-bold cyberpunk-text mb-2">{selectedCharacter.name}</h3>
                 </div>
                 
-                <div>
-                  <h4 className="text-2xl font-bold mb-4 cyberpunk-text flex items-center">
-                    <Zap className="w-6 h-6 mr-3 text-purple-400" />
-                    Abilities
-                  </h4>
-                  <div className="grid gap-3">
-                    {selectedCharacter.abilities.map((ability, index) => (
-                      <div key={index} className="flex items-center p-3 glass-card rounded-lg">
-                        <span className="w-2 h-2 bg-cyan-400 rounded-full mr-3 pulse-intense"></span>
-                        <span className="text-gray-300">{ability}</span>
-                      </div>
-                    ))}
+                <div className="space-y-6">
+                  <div className="p-6 bg-gradient-to-r from-purple-900/30 to-cyan-900/30 rounded-lg border border-cyan-500/30">
+                    <p className="text-gray-300 leading-relaxed text-lg">{selectedCharacter.description}</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-2xl font-bold mb-4 cyberpunk-text flex items-center">
+                      <Zap className="w-6 h-6 mr-3 text-purple-400" />
+                      Abilities
+                    </h4>
+                    <div className="grid gap-3">
+                      {selectedCharacter.abilities.map((ability, index) => (
+                        <div key={index} className="flex items-center p-3 glass-card rounded-lg">
+                          <span className="w-2 h-2 bg-cyan-400 rounded-full mr-3 pulse-intense"></span>
+                          <span className="text-gray-300">{ability}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  <div className="pt-6 border-t border-cyan-500/30">
+                    <Link 
+                      to={`/read/${selectedCharacter.relatedStory}`} 
+                      className="btn-futuristic flex items-center group"
+                    >
+                      <Sparkles className="w-5 h-5 mr-2 group-hover:text-yellow-400 transition-colors" />
+                      Read story featuring {selectedCharacter.name}
+                      <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </Link>
                   </div>
                 </div>
-                
-                <div className="pt-6 border-t border-cyan-500/30">
-                  <Link 
-                    to={`/read/${selectedCharacter.relatedStory}`} 
-                    className="btn-futuristic flex items-center group"
-                  >
-                    <Sparkles className="w-5 h-5 mr-2 group-hover:text-yellow-400 transition-colors" />
-                    Read story featuring {selectedCharacter.name}
-                    <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </div>
               </div>
-            </div>
+            </ScrollArea>
           </div>
         </div>
       </main>
