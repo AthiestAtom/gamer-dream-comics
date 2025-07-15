@@ -1,12 +1,33 @@
 
 import { Link, useLocation } from "react-router-dom";
-import { Book, Users, User } from "lucide-react";
+import { Book, Users, User, LogOut } from "lucide-react";
+import { useAuth } from "@/hooks/useAuth";
+import { Button } from "@/components/ui/button";
+import { useToast } from "@/hooks/use-toast";
 
 const Navbar: React.FC = () => {
   const location = useLocation();
+  const { user, signOut } = useAuth();
+  const { toast } = useToast();
   
   const isActive = (path: string) => {
     return location.pathname === path ? "text-comic-purple" : "hover:text-comic-purple transition-colors";
+  };
+
+  const handleSignOut = async () => {
+    const { error } = await signOut();
+    if (error) {
+      toast({
+        title: "Error signing out",
+        description: error.message,
+        variant: "destructive",
+      });
+    } else {
+      toast({
+        title: "Signed out successfully",
+        description: "You have been signed out.",
+      });
+    }
   };
   
   return (
@@ -22,34 +43,53 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
         
-        <div className="flex space-x-6">
-          <Link 
-            to="/" 
-            className={`flex items-center ${isActive('/')}`}
-          >
-            Home
-          </Link>
-          <Link 
-            to="/stories" 
-            className={`flex items-center ${isActive('/stories')}`}
-          >
-            <Book className="mr-1 h-4 w-4" />
-            Stories
-          </Link>
-          <Link 
-            to="/characters" 
-            className={`flex items-center ${isActive('/characters')}`}
-          >
-            <Users className="mr-1 h-4 w-4" />
-            Characters
-          </Link>
-          <Link 
-            to="/about" 
-            className={`flex items-center ${isActive('/about')}`}
-          >
-            <User className="mr-1 h-4 w-4" />
-            About
-          </Link>
+        <div className="flex items-center space-x-6">
+          <div className="flex space-x-6">
+            <Link 
+              to="/" 
+              className={`flex items-center ${isActive('/')}`}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/stories" 
+              className={`flex items-center ${isActive('/stories')}`}
+            >
+              <Book className="mr-1 h-4 w-4" />
+              Stories
+            </Link>
+            <Link 
+              to="/characters" 
+              className={`flex items-center ${isActive('/characters')}`}
+            >
+              <Users className="mr-1 h-4 w-4" />
+              Characters
+            </Link>
+            <Link 
+              to="/about" 
+              className={`flex items-center ${isActive('/about')}`}
+            >
+              <User className="mr-1 h-4 w-4" />
+              About
+            </Link>
+          </div>
+          
+          {user && (
+            <div className="flex items-center space-x-4 ml-6 pl-6 border-l border-purple-500/30">
+              <span className="text-sm text-gray-300">
+                Welcome, {user.email?.split('@')[0]}
+              </span>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={handleSignOut}
+                className="text-gray-300 hover:text-white hover:bg-white/10"
+              >
+                <LogOut className="h-4 w-4 mr-1" />
+                Sign Out
+              </Button>
+            </div>
+          )}
         </div>
       </div>
     </nav>
